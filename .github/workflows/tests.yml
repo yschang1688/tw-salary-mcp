@@ -1,0 +1,49 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e ".[dev]"
+      # 29 則測試，其中 16 則起 subprocess 走真實 MCP 協定——
+      # 不是 mock 掉協定層再宣稱「協定沒問題」。
+      - run: python -m pytest tests/ -q
+
+  tool-surface-guard:
+    # 這個 server 的核心設計是「只開四個具名唯讀工具，刻意不做任意查詢通道」。
+    # 通用 query 工具等於把查詢語言的完整表達力交給模型與任何能對它注入的東西，
+    # 所以「沒有多出工具」本身就是要被 CI 守住的性質。
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - name: 工具面未擴張
+        run: |
+          python - <<'PY'
+          import re, pathlib, sys
+          src = pathlib.Path("salary_mcp/server.py").read_text(encoding="utf-8")
+          tools = set(re.findall(r'@mcp\.tool\(\)\s*\n\s*(?:async\s+)?def\s+(\w+)', src))
+          expected = {"lookup_company", "industry_stats", "top_by_median", "company_trend"}
+          if tools != expected:
+              sys.exit(f"工具面變動：預期 {sorted(expected)}，實際 {sorted(tools)}")
+          # 比對「函式定義」而非字串出現——server.py 的說明文件正是在解釋
+          # 「刻意沒有 run_query」，用字串比對會把文件本身誤判成違規。
+          for banned in ("run_query", "execute_sql", "raw_query"):
+              if re.search(rf"def\s+{banned}\s*\(", src):
+                  sys.exit(f"偵測到任意查詢通道 {banned}——這是本專案明確拒絕的設計")
+          print(f"✓ 工具面維持四個具名唯讀工具：{sorted(tools)}")
+          PY

@@ -1,5 +1,7 @@
 # salary-mcp-agent
 
+[![tests](https://github.com/yschang1688/salary-mcp-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/yschang1688/salary-mcp-agent/actions/workflows/tests.yml)
+
 An MCP server that exposes a real dataset to a language model under explicit
 constraints, and a Claude Agent SDK agent that researches through it.
 
