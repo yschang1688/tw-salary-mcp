@@ -7,7 +7,9 @@ constraints, and a Claude Agent SDK agent that researches through it.
 
 The dataset is Taiwan's MOPS non-managerial salary disclosures for listed
 companies, 2019–2025 — public company-level aggregates from the TWSE and TPEx
-open-data endpoints.
+open-data endpoints. The same dataset powers a live explorer at
+**[salary-db.pages.dev](https://salary-db.pages.dev)** (1,826 companies,
+seven-year trends, industry box plots — a single self-contained page).
 
 | | |
 |---|---|
