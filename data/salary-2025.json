@@ -1,19 +1,22 @@
 {
  "year": 2025,
  "rocYear": 114,
- "fetchedAt": "2026-08-01T16:46:08.539Z",
+ "fetchedAt": "2026-08-12T07:06:07.885Z",
  "source": [
   "https://openapi.twse.com.tw/v1/opendata/t187ap46_L_5",
   "https://www.tpex.org.tw/openapi/v1/t187ap46_O_5"
  ],
  "integrity": {
-  "fetchedCount": 1822,
-  "carriedForwardCount": 2,
+  "fetchedCount": 1821,
+  "carriedForwardCount": 5,
   "carriedForwardCodes": [
+   "2539",
    "4130",
-   "2364"
+   "2364",
+   "4960",
+   "8087"
   ],
-  "totalCount": 1824,
+  "totalCount": 1826,
   "scope": {
    "minMedian": 120,
    "maxRank": 500,
@@ -5059,7 +5062,9 @@
    "avgSalary": 117.3,
    "avgBenefit": 145.7,
    "industry": "建材營造",
-   "employees": 70
+   "employees": 70,
+   "carriedForward": true,
+   "carriedAt": "2026-08-12T07:06:07.885Z"
   },
   {
    "rank": 361,
@@ -14783,20 +14788,6 @@
   },
   {
    "rank": 1055,
-   "code": "4960",
-   "name": "誠美材",
-   "market": "上市",
-   "medianNonMgr": 69,
-   "medianChangePct": 7.81,
-   "avgNonMgr": 86.4,
-   "avgChangePct": 8.95,
-   "avgSalary": 84.5,
-   "avgBenefit": 106.1,
-   "industry": null,
-   "employees": null
-  },
-  {
-   "rank": 1056,
    "code": "6949",
    "name": "沛爾生醫-創",
    "market": "上市",
@@ -14810,7 +14801,7 @@
    "employees": 72
   },
   {
-   "rank": 1057,
+   "rank": 1056,
    "code": "8045",
    "name": "達運光電",
    "market": "上市",
@@ -14824,7 +14815,7 @@
    "employees": 175
   },
   {
-   "rank": 1058,
+   "rank": 1057,
    "code": "3232",
    "name": "昱捷",
    "market": "上櫃",
@@ -14838,7 +14829,7 @@
    "employees": 40
   },
   {
-   "rank": 1059,
+   "rank": 1058,
    "code": "6182",
    "name": "合晶",
    "market": "上櫃",
@@ -14852,7 +14843,7 @@
    "employees": 965
   },
   {
-   "rank": 1060,
+   "rank": 1059,
    "code": "8111",
    "name": "立碁",
    "market": "上櫃",
@@ -14864,6 +14855,22 @@
    "avgBenefit": 87.4,
    "industry": "光電業",
    "employees": 192
+  },
+  {
+   "rank": 1060,
+   "code": "4960",
+   "name": "誠美材",
+   "market": "上市",
+   "medianNonMgr": 69,
+   "medianChangePct": 7.81,
+   "avgNonMgr": 86.4,
+   "avgChangePct": 8.95,
+   "avgSalary": 84.5,
+   "avgBenefit": 106.1,
+   "industry": null,
+   "employees": null,
+   "carriedForward": true,
+   "carriedAt": "2026-08-12T07:06:07.885Z"
   },
   {
    "rank": 1061,
@@ -15479,7 +15486,9 @@
    "avgSalary": 155.8,
    "avgBenefit": 175,
    "industry": "綠能環保",
-   "employees": 8
+   "employees": 8,
+   "carriedForward": true,
+   "carriedAt": "2026-08-12T07:06:07.885Z"
   },
   {
    "rank": 1105,
@@ -16267,6 +16276,20 @@
   },
   {
    "rank": 1161,
+   "code": "1409",
+   "name": "新纖",
+   "market": "上市",
+   "medianNonMgr": 66.2,
+   "medianChangePct": 0,
+   "avgNonMgr": 70.5,
+   "avgChangePct": -1.67,
+   "avgSalary": 67,
+   "avgBenefit": 81.1,
+   "industry": null,
+   "employees": null
+  },
+  {
+   "rank": 1162,
    "code": "3591",
    "name": "艾笛森",
    "market": "上市",
@@ -16280,7 +16303,7 @@
    "employees": 156
   },
   {
-   "rank": 1162,
+   "rank": 1163,
    "code": "3580",
    "name": "友威科",
    "market": "上櫃",
@@ -16294,7 +16317,7 @@
    "employees": 102
   },
   {
-   "rank": 1163,
+   "rank": 1164,
    "code": "7728",
    "name": "光焱科技",
    "market": "上櫃",
@@ -16308,7 +16331,7 @@
    "employees": 56
   },
   {
-   "rank": 1164,
+   "rank": 1165,
    "code": "2496",
    "name": "卓越",
    "market": "上市",
@@ -16322,7 +16345,7 @@
    "employees": 6
   },
   {
-   "rank": 1165,
+   "rank": 1166,
    "code": "6416",
    "name": "瑞祺電通",
    "market": "上市",
@@ -16336,7 +16359,7 @@
    "employees": 223
   },
   {
-   "rank": 1166,
+   "rank": 1167,
    "code": "8131",
    "name": "福懋科",
    "market": "上市",
@@ -16350,7 +16373,7 @@
    "employees": 2355
   },
   {
-   "rank": 1167,
+   "rank": 1168,
    "code": "4167",
    "name": "松瑞藥",
    "market": "上櫃",
@@ -16364,7 +16387,7 @@
    "employees": 261
   },
   {
-   "rank": 1168,
+   "rank": 1169,
    "code": "8431",
    "name": "匯鑽科",
    "market": "上櫃",
@@ -16378,7 +16401,7 @@
    "employees": 11
   },
   {
-   "rank": 1169,
+   "rank": 1170,
    "code": "4707",
    "name": "磐亞",
    "market": "上櫃",
@@ -16392,7 +16415,7 @@
    "employees": 99
   },
   {
-   "rank": 1170,
+   "rank": 1171,
    "code": "4933",
    "name": "友輝",
    "market": "上櫃",
@@ -16406,7 +16429,7 @@
    "employees": 545
   },
   {
-   "rank": 1171,
+   "rank": 1172,
    "code": "7713",
    "name": "威力德生醫",
    "market": "上櫃",
@@ -16420,7 +16443,7 @@
    "employees": 36
   },
   {
-   "rank": 1172,
+   "rank": 1173,
    "code": "1413",
    "name": "宏洲",
    "market": "上市",
@@ -16434,7 +16457,7 @@
    "employees": 166
   },
   {
-   "rank": 1173,
+   "rank": 1174,
    "code": "2102",
    "name": "泰豐",
    "market": "上市",
@@ -16448,7 +16471,7 @@
    "employees": 29
   },
   {
-   "rank": 1174,
+   "rank": 1175,
    "code": "8358",
    "name": "金居",
    "market": "上櫃",
@@ -16462,7 +16485,7 @@
    "employees": 287
   },
   {
-   "rank": 1175,
+   "rank": 1176,
    "code": "1802",
    "name": "台玻",
    "market": "上市",
@@ -16476,7 +16499,7 @@
    "employees": 4008
   },
   {
-   "rank": 1176,
+   "rank": 1177,
    "code": "2038",
    "name": "海光",
    "market": "上市",
@@ -16490,7 +16513,7 @@
    "employees": 370
   },
   {
-   "rank": 1177,
+   "rank": 1178,
    "code": "3189",
    "name": "景碩",
    "market": "上市",
@@ -16504,7 +16527,7 @@
    "employees": 6101
   },
   {
-   "rank": 1178,
+   "rank": 1179,
    "code": "4541",
    "name": "晟田",
    "market": "上櫃",
@@ -16518,7 +16541,7 @@
    "employees": 641
   },
   {
-   "rank": 1179,
+   "rank": 1180,
    "code": "6134",
    "name": "萬旭",
    "market": "上櫃",
@@ -16532,7 +16555,7 @@
    "employees": 101
   },
   {
-   "rank": 1180,
+   "rank": 1181,
    "code": "1512",
    "name": "瑞利",
    "market": "上市",
@@ -16546,7 +16569,7 @@
    "employees": 36
   },
   {
-   "rank": 1181,
+   "rank": 1182,
    "code": "9958",
    "name": "世紀鋼",
    "market": "上市",
@@ -16560,7 +16583,7 @@
    "employees": 293
   },
   {
-   "rank": 1182,
+   "rank": 1183,
    "code": "6171",
    "name": "大城地產",
    "market": "上櫃",
@@ -16574,7 +16597,7 @@
    "employees": 13
   },
   {
-   "rank": 1183,
+   "rank": 1184,
    "code": "6661",
    "name": "威健生技",
    "market": "上櫃",
@@ -16588,7 +16611,7 @@
    "employees": 58
   },
   {
-   "rank": 1184,
+   "rank": 1185,
    "code": "8043",
    "name": "蜜望實",
    "market": "上櫃",
@@ -16602,7 +16625,7 @@
    "employees": 80
   },
   {
-   "rank": 1185,
+   "rank": 1186,
    "code": "2034",
    "name": "允強",
    "market": "上市",
@@ -16616,7 +16639,7 @@
    "employees": 635
   },
   {
-   "rank": 1186,
+   "rank": 1187,
    "code": "6988",
    "name": "威力暘-創",
    "market": "上市",
@@ -16630,7 +16653,7 @@
    "employees": 149
   },
   {
-   "rank": 1187,
+   "rank": 1188,
    "code": "3322",
    "name": "建舜電",
    "market": "上櫃",
@@ -16644,7 +16667,7 @@
    "employees": 70
   },
   {
-   "rank": 1188,
+   "rank": 1189,
    "code": "4706",
    "name": "大恭",
    "market": "上櫃",
@@ -16658,7 +16681,7 @@
    "employees": 184
   },
   {
-   "rank": 1189,
+   "rank": 1190,
    "code": "6248",
    "name": "沛波",
    "market": "上櫃",
@@ -16672,7 +16695,7 @@
    "employees": 184
   },
   {
-   "rank": 1190,
+   "rank": 1191,
    "code": "6532",
    "name": "瑞耘",
    "market": "上櫃",
@@ -16686,7 +16709,7 @@
    "employees": 122
   },
   {
-   "rank": 1191,
+   "rank": 1192,
    "code": "2355",
    "name": "敬鵬",
    "market": "上市",
@@ -16700,7 +16723,7 @@
    "employees": 2728
   },
   {
-   "rank": 1192,
+   "rank": 1193,
    "code": "4155",
    "name": "訊映",
    "market": "上市",
@@ -16714,7 +16737,7 @@
    "employees": 77
   },
   {
-   "rank": 1193,
+   "rank": 1194,
    "code": "8110",
    "name": "華東",
    "market": "上市",
@@ -16728,7 +16751,7 @@
    "employees": 1292
   },
   {
-   "rank": 1194,
+   "rank": 1195,
    "code": "1457",
    "name": "宜進",
    "market": "上市",
@@ -16742,7 +16765,7 @@
    "employees": 15
   },
   {
-   "rank": 1195,
+   "rank": 1196,
    "code": "3268",
    "name": "海德威",
    "market": "上櫃",
@@ -16756,7 +16779,7 @@
    "employees": 34
   },
   {
-   "rank": 1196,
+   "rank": 1197,
    "code": "6222",
    "name": "立軒",
    "market": "上櫃",
@@ -16770,7 +16793,7 @@
    "employees": 3
   },
   {
-   "rank": 1197,
+   "rank": 1198,
    "code": "6556",
    "name": "勝品",
    "market": "上櫃",
@@ -16784,7 +16807,7 @@
    "employees": 285
   },
   {
-   "rank": 1198,
+   "rank": 1199,
    "code": "8921",
    "name": "沈氏",
    "market": "上櫃",
@@ -16798,7 +16821,7 @@
    "employees": 143
   },
   {
-   "rank": 1199,
+   "rank": 1200,
    "code": "2031",
    "name": "新光鋼",
    "market": "上市",
@@ -16812,7 +16835,7 @@
    "employees": 262
   },
   {
-   "rank": 1200,
+   "rank": 1201,
    "code": "6219",
    "name": "富旺",
    "market": "上櫃",
@@ -16826,7 +16849,7 @@
    "employees": 44
   },
   {
-   "rank": 1201,
+   "rank": 1202,
    "code": "6829",
    "name": "千附精密",
    "market": "上櫃",
@@ -16840,7 +16863,7 @@
    "employees": 506
   },
   {
-   "rank": 1202,
+   "rank": 1203,
    "code": "2481",
    "name": "強茂",
    "market": "上市",
@@ -16854,7 +16877,7 @@
    "employees": 1287
   },
   {
-   "rank": 1203,
+   "rank": 1204,
    "code": "3011",
    "name": "今皓",
    "market": "上市",
@@ -16868,7 +16891,7 @@
    "employees": 32
   },
   {
-   "rank": 1204,
+   "rank": 1205,
    "code": "3276",
    "name": "宇環",
    "market": "上櫃",
@@ -16882,7 +16905,7 @@
    "employees": 10
   },
   {
-   "rank": 1205,
+   "rank": 1206,
    "code": "2476",
    "name": "鉅祥",
    "market": "上市",
@@ -16896,7 +16919,7 @@
    "employees": 776
   },
   {
-   "rank": 1206,
+   "rank": 1207,
    "code": "6426",
    "name": "統新",
    "market": "上市",
@@ -16910,7 +16933,7 @@
    "employees": 199
   },
   {
-   "rank": 1207,
+   "rank": 1208,
    "code": "3272",
    "name": "東碩",
    "market": "上櫃",
@@ -16924,7 +16947,7 @@
    "employees": 308
   },
   {
-   "rank": 1208,
+   "rank": 1209,
    "code": "4192",
    "name": "杏國",
    "market": "上櫃",
@@ -16938,7 +16961,7 @@
    "employees": 20
   },
   {
-   "rank": 1209,
+   "rank": 1210,
    "code": "8938",
    "name": "明安",
    "market": "上櫃",
@@ -16952,7 +16975,7 @@
    "employees": 920
   },
   {
-   "rank": 1210,
+   "rank": 1211,
    "code": "1731",
    "name": "美吾華",
    "market": "上市",
@@ -16966,7 +16989,7 @@
    "employees": 195
   },
   {
-   "rank": 1211,
+   "rank": 1212,
    "code": "2450",
    "name": "神腦",
    "market": "上市",
@@ -16980,7 +17003,7 @@
    "employees": 1829
   },
   {
-   "rank": 1212,
+   "rank": 1213,
    "code": "2704",
    "name": "國賓",
    "market": "上市",
@@ -16994,7 +17017,7 @@
    "employees": 451
   },
   {
-   "rank": 1213,
+   "rank": 1214,
    "code": "2739",
    "name": "寒舍",
    "market": "上市",
@@ -17008,7 +17031,7 @@
    "employees": 1504
   },
   {
-   "rank": 1214,
+   "rank": 1215,
    "code": "3060",
    "name": "銘異",
    "market": "上市",
@@ -17022,7 +17045,7 @@
    "employees": 221
   },
   {
-   "rank": 1215,
+   "rank": 1216,
    "code": "6115",
    "name": "鎰勝",
    "market": "上市",
@@ -17036,7 +17059,7 @@
    "employees": 113
   },
   {
-   "rank": 1216,
+   "rank": 1217,
    "code": "2755",
    "name": "揚秦",
    "market": "上櫃",
@@ -17050,7 +17073,7 @@
    "employees": 360
   },
   {
-   "rank": 1217,
+   "rank": 1218,
    "code": "8291",
    "name": "尚茂",
    "market": "上櫃",
@@ -17064,7 +17087,7 @@
    "employees": 9
   },
   {
-   "rank": 1218,
+   "rank": 1219,
    "code": "3135",
    "name": "凌航",
    "market": "上市",
@@ -17078,7 +17101,7 @@
    "employees": 58
   },
   {
-   "rank": 1219,
+   "rank": 1220,
    "code": "3432",
    "name": "台端",
    "market": "上市",
@@ -17092,7 +17115,7 @@
    "employees": 20
   },
   {
-   "rank": 1220,
+   "rank": 1221,
    "code": "6117",
    "name": "迎廣",
    "market": "上市",
@@ -17106,7 +17129,7 @@
    "employees": 796
   },
   {
-   "rank": 1221,
+   "rank": 1222,
    "code": "3363",
    "name": "上詮",
    "market": "上櫃",
@@ -17120,7 +17143,7 @@
    "employees": 203
   },
   {
-   "rank": 1222,
+   "rank": 1223,
    "code": "6204",
    "name": "艾華",
    "market": "上櫃",
@@ -17134,7 +17157,7 @@
    "employees": 35
   },
   {
-   "rank": 1223,
+   "rank": 1224,
    "code": "1809",
    "name": "中釉",
    "market": "上市",
@@ -17148,7 +17171,7 @@
    "employees": 234
   },
   {
-   "rank": 1224,
+   "rank": 1225,
    "code": "6914",
    "name": "阜爾運通",
    "market": "上市",
@@ -17162,7 +17185,7 @@
    "employees": 225
   },
   {
-   "rank": 1225,
+   "rank": 1226,
    "code": "4183",
    "name": "福永生技",
    "market": "上櫃",
@@ -17176,7 +17199,7 @@
    "employees": 93
   },
   {
-   "rank": 1226,
+   "rank": 1227,
    "code": "2107",
    "name": "厚生",
    "market": "上市",
@@ -17190,7 +17213,7 @@
    "employees": 176
   },
   {
-   "rank": 1227,
+   "rank": 1228,
    "code": "8104",
    "name": "錸寶",
    "market": "上市",
@@ -17204,7 +17227,7 @@
    "employees": 142
   },
   {
-   "rank": 1228,
+   "rank": 1229,
    "code": "2756",
    "name": "聯發國際",
    "market": "上櫃",
@@ -17218,7 +17241,7 @@
    "employees": 140
   },
   {
-   "rank": 1229,
+   "rank": 1230,
    "code": "6662",
    "name": "樂斯科",
    "market": "上櫃",
@@ -17232,7 +17255,7 @@
    "employees": 68
   },
   {
-   "rank": 1230,
+   "rank": 1231,
    "code": "8383",
    "name": "千附",
    "market": "上櫃",
@@ -17246,7 +17269,7 @@
    "employees": 332
   },
   {
-   "rank": 1231,
+   "rank": 1232,
    "code": "4164",
    "name": "承業醫",
    "market": "上市",
@@ -17260,7 +17283,7 @@
    "employees": 357
   },
   {
-   "rank": 1232,
+   "rank": 1233,
    "code": "6201",
    "name": "亞弘電",
    "market": "上市",
@@ -17274,7 +17297,7 @@
    "employees": 394
   },
   {
-   "rank": 1233,
+   "rank": 1234,
    "code": "8114",
    "name": "振樺電",
    "market": "上市",
@@ -17288,7 +17311,7 @@
    "employees": 316
   },
   {
-   "rank": 1234,
+   "rank": 1235,
    "code": "4121",
    "name": "優盛",
    "market": "上櫃",
@@ -17302,7 +17325,7 @@
    "employees": 80
   },
   {
-   "rank": 1235,
+   "rank": 1236,
    "code": "3346",
    "name": "麗清",
    "market": "上市",
@@ -17316,7 +17339,7 @@
    "employees": 195
   },
   {
-   "rank": 1236,
+   "rank": 1237,
    "code": "5283",
    "name": "禾聯碩",
    "market": "上市",
@@ -17330,7 +17353,7 @@
    "employees": 716
   },
   {
-   "rank": 1237,
+   "rank": 1238,
    "code": "6658",
    "name": "聯策",
    "market": "上市",
@@ -17344,7 +17367,7 @@
    "employees": 99
   },
   {
-   "rank": 1238,
+   "rank": 1239,
    "code": "6923",
    "name": "中台",
    "market": "上市",
@@ -17358,7 +17381,7 @@
    "employees": 181
   },
   {
-   "rank": 1239,
+   "rank": 1240,
    "code": "7708",
    "name": "全家餐飲",
    "market": "上櫃",
@@ -17372,7 +17395,7 @@
    "employees": 604
   },
   {
-   "rank": 1240,
+   "rank": 1241,
    "code": "4401",
    "name": "東隆興",
    "market": "上櫃",
@@ -17386,7 +17409,7 @@
    "employees": 442
   },
   {
-   "rank": 1241,
+   "rank": 1242,
    "code": "5398",
    "name": "慕康生醫",
    "market": "上櫃",
@@ -17400,7 +17423,7 @@
    "employees": 8
   },
   {
-   "rank": 1242,
+   "rank": 1243,
    "code": "8942",
    "name": "森鉅",
    "market": "上櫃",
@@ -17414,7 +17437,7 @@
    "employees": 186
   },
   {
-   "rank": 1243,
+   "rank": 1244,
    "code": "1584",
    "name": "精剛",
    "market": "上櫃",
@@ -17428,7 +17451,7 @@
    "employees": 181
   },
   {
-   "rank": 1244,
+   "rank": 1245,
    "code": "6205",
    "name": "詮欣",
    "market": "上市",
@@ -17442,7 +17465,7 @@
    "employees": 172
   },
   {
-   "rank": 1245,
+   "rank": 1246,
    "code": "2926",
    "name": "誠品生活",
    "market": "上櫃",
@@ -17456,7 +17479,7 @@
    "employees": 1120
   },
   {
-   "rank": 1246,
+   "rank": 1247,
    "code": "8433",
    "name": "弘帆",
    "market": "上櫃",
@@ -17470,7 +17493,7 @@
    "employees": 22
   },
   {
-   "rank": 1247,
+   "rank": 1248,
    "code": "1218",
    "name": "泰山",
    "market": "上市",
@@ -17484,7 +17507,7 @@
    "employees": 447
   },
   {
-   "rank": 1248,
+   "rank": 1249,
    "code": "8401",
    "name": "白紗科",
    "market": "上櫃",
@@ -17498,7 +17521,7 @@
    "employees": 464
   },
   {
-   "rank": 1249,
+   "rank": 1250,
    "code": "1220",
    "name": "台榮",
    "market": "上市",
@@ -17512,7 +17535,7 @@
    "employees": 205
   },
   {
-   "rank": 1250,
+   "rank": 1251,
    "code": "5345",
    "name": "馥鴻",
    "market": "上櫃",
@@ -17526,7 +17549,7 @@
    "employees": 5
   },
   {
-   "rank": 1251,
+   "rank": 1252,
    "code": "1231",
    "name": "聯華食",
    "market": "上市",
@@ -17540,7 +17563,7 @@
    "employees": 2398
   },
   {
-   "rank": 1252,
+   "rank": 1253,
    "code": "6207",
    "name": "雷科",
    "market": "上櫃",
@@ -17554,7 +17577,7 @@
    "employees": 178
   },
   {
-   "rank": 1253,
+   "rank": 1254,
    "code": "1419",
    "name": "新紡",
    "market": "上市",
@@ -17568,7 +17591,7 @@
    "employees": 620
   },
   {
-   "rank": 1254,
+   "rank": 1255,
    "code": "1473",
    "name": "台南",
    "market": "上市",
@@ -17582,7 +17605,7 @@
    "employees": 320
   },
   {
-   "rank": 1255,
+   "rank": 1256,
    "code": "1762",
    "name": "中化生",
    "market": "上市",
@@ -17596,7 +17619,7 @@
    "employees": 266
   },
   {
-   "rank": 1256,
+   "rank": 1257,
    "code": "3058",
    "name": "立德",
    "market": "上市",
@@ -17610,7 +17633,7 @@
    "employees": 152
   },
   {
-   "rank": 1257,
+   "rank": 1258,
    "code": "6706",
    "name": "惠特",
    "market": "上市",
@@ -17624,7 +17647,7 @@
    "employees": 361
   },
   {
-   "rank": 1258,
+   "rank": 1259,
    "code": "6148",
    "name": "驊宏資",
    "market": "上櫃",
@@ -17638,7 +17661,7 @@
    "employees": 47
   },
   {
-   "rank": 1259,
+   "rank": 1260,
    "code": "6967",
    "name": "汎瑋材料",
    "market": "上櫃",
@@ -17652,7 +17675,7 @@
    "employees": 56
   },
   {
-   "rank": 1260,
+   "rank": 1261,
    "code": "3576",
    "name": "聯合再生",
    "market": "上市",
@@ -17666,7 +17689,7 @@
    "employees": 841
   },
   {
-   "rank": 1261,
+   "rank": 1262,
    "code": "4764",
    "name": "雙鍵",
    "market": "上市",
@@ -17680,7 +17703,7 @@
    "employees": 169
   },
   {
-   "rank": 1262,
+   "rank": 1263,
    "code": "1565",
    "name": "精華",
    "market": "上櫃",
@@ -17694,7 +17717,7 @@
    "employees": 2440
   },
   {
-   "rank": 1263,
+   "rank": 1264,
    "code": "1776",
    "name": "展宇",
    "market": "上市",
@@ -17708,7 +17731,7 @@
    "employees": 95
   },
   {
-   "rank": 1264,
+   "rank": 1265,
    "code": "2707",
    "name": "晶華",
    "market": "上市",
@@ -17722,7 +17745,7 @@
    "employees": 1212
   },
   {
-   "rank": 1265,
+   "rank": 1266,
    "code": "6405",
    "name": "悅城",
    "market": "上市",
@@ -17736,7 +17759,7 @@
    "employees": 34
   },
   {
-   "rank": 1266,
+   "rank": 1267,
    "code": "9928",
    "name": "中視",
    "market": "上市",
@@ -17750,7 +17773,7 @@
    "employees": 390
   },
   {
-   "rank": 1267,
+   "rank": 1268,
    "code": "5425",
    "name": "台半",
    "market": "上櫃",
@@ -17764,7 +17787,7 @@
    "employees": 618
   },
   {
-   "rank": 1268,
+   "rank": 1269,
    "code": "6538",
    "name": "倉和",
    "market": "上櫃",
@@ -17778,7 +17801,7 @@
    "employees": 184
   },
   {
-   "rank": 1269,
+   "rank": 1270,
    "code": "1530",
    "name": "亞崴",
    "market": "上市",
@@ -17792,7 +17815,7 @@
    "employees": 294
   },
   {
-   "rank": 1270,
+   "rank": 1271,
    "code": "1718",
    "name": "中纖",
    "market": "上市",
@@ -17806,7 +17829,7 @@
    "employees": 546
   },
   {
-   "rank": 1271,
+   "rank": 1272,
    "code": "3296",
    "name": "勝德",
    "market": "上市",
@@ -17820,7 +17843,7 @@
    "employees": 93
   },
   {
-   "rank": 1272,
+   "rank": 1273,
    "code": "4142",
    "name": "國光生",
    "market": "上市",
@@ -17834,7 +17857,7 @@
    "employees": 482
   },
   {
-   "rank": 1273,
+   "rank": 1274,
    "code": "6916",
    "name": "華凌",
    "market": "上市",
@@ -17848,7 +17871,7 @@
    "employees": 265
   },
   {
-   "rank": 1274,
+   "rank": 1275,
    "code": "3285",
    "name": "微端",
    "market": "上櫃",
@@ -17862,7 +17885,7 @@
    "employees": 46
   },
   {
-   "rank": 1275,
+   "rank": 1276,
    "code": "5251",
    "name": "天鉞電",
    "market": "上櫃",
@@ -17876,7 +17899,7 @@
    "employees": 15
   },
   {
-   "rank": 1276,
+   "rank": 1277,
    "code": "6512",
    "name": "啟發電",
    "market": "上櫃",
@@ -17890,7 +17913,7 @@
    "employees": 54
   },
   {
-   "rank": 1277,
+   "rank": 1278,
    "code": "1525",
    "name": "江申",
    "market": "上市",
@@ -17904,7 +17927,7 @@
    "employees": 300
   },
   {
-   "rank": 1278,
+   "rank": 1279,
    "code": "2106",
    "name": "建大",
    "market": "上市",
@@ -17918,7 +17941,7 @@
    "employees": 1705
   },
   {
-   "rank": 1279,
+   "rank": 1280,
    "code": "6574",
    "name": "霈方",
    "market": "上櫃",
@@ -17932,7 +17955,7 @@
    "employees": 113
   },
   {
-   "rank": 1280,
+   "rank": 1281,
    "code": "6597",
    "name": "立誠",
    "market": "上櫃",
@@ -17946,7 +17969,7 @@
    "employees": 193
   },
   {
-   "rank": 1281,
+   "rank": 1282,
    "code": "1225",
    "name": "福懋油",
    "market": "上市",
@@ -17960,7 +17983,7 @@
    "employees": 223
   },
   {
-   "rank": 1282,
+   "rank": 1283,
    "code": "1796",
    "name": "金穎生技",
    "market": "上櫃",
@@ -17974,7 +17997,7 @@
    "employees": 278
   },
   {
-   "rank": 1283,
+   "rank": 1284,
    "code": "6150",
    "name": "撼訊",
    "market": "上櫃",
@@ -17988,7 +18011,7 @@
    "employees": 152
   },
   {
-   "rank": 1284,
+   "rank": 1285,
    "code": "1319",
    "name": "東陽",
    "market": "上市",
@@ -18002,7 +18025,7 @@
    "employees": 3624
   },
   {
-   "rank": 1285,
+   "rank": 1286,
    "code": "1441",
    "name": "大東",
    "market": "上市",
@@ -18016,7 +18039,7 @@
    "employees": 21
   },
   {
-   "rank": 1286,
+   "rank": 1287,
    "code": "2009",
    "name": "第一銅",
    "market": "上市",
@@ -18030,7 +18053,7 @@
    "employees": 229
   },
   {
-   "rank": 1287,
+   "rank": 1288,
    "code": "1109",
    "name": "信大",
    "market": "上市",
@@ -18044,7 +18067,7 @@
    "employees": 322
   },
   {
-   "rank": 1288,
+   "rank": 1289,
    "code": "4108",
    "name": "懷特",
    "market": "上市",
@@ -18058,7 +18081,7 @@
    "employees": 43
   },
   {
-   "rank": 1289,
+   "rank": 1290,
    "code": "3085",
    "name": "新零售",
    "market": "上櫃",
@@ -18072,7 +18095,7 @@
    "employees": 16
   },
   {
-   "rank": 1290,
+   "rank": 1291,
    "code": "3434",
    "name": "哲固",
    "market": "上櫃",
@@ -18086,7 +18109,7 @@
    "employees": 105
   },
   {
-   "rank": 1291,
+   "rank": 1292,
    "code": "4305",
    "name": "世坤",
    "market": "上櫃",
@@ -18100,7 +18123,7 @@
    "employees": 93
   },
   {
-   "rank": 1292,
+   "rank": 1293,
    "code": "6169",
    "name": "昱泉",
    "market": "上櫃",
@@ -18114,7 +18137,7 @@
    "employees": 14
   },
   {
-   "rank": 1293,
+   "rank": 1294,
    "code": "1456",
    "name": "怡華",
    "market": "上市",
@@ -18128,7 +18151,7 @@
    "employees": 22
   },
   {
-   "rank": 1294,
+   "rank": 1295,
    "code": "1459",
    "name": "聯發",
    "market": "上市",
@@ -18142,7 +18165,7 @@
    "employees": 22
   },
   {
-   "rank": 1295,
+   "rank": 1296,
    "code": "2727",
    "name": "王品",
    "market": "上市",
@@ -18156,7 +18179,7 @@
    "employees": 3681
   },
   {
-   "rank": 1296,
+   "rank": 1297,
    "code": "4942",
    "name": "嘉彰",
    "market": "上市",
@@ -18170,7 +18193,7 @@
    "employees": 296
   },
   {
-   "rank": 1297,
+   "rank": 1298,
    "code": "9905",
    "name": "大華",
    "market": "上市",
@@ -18184,7 +18207,7 @@
    "employees": 252
   },
   {
-   "rank": 1298,
+   "rank": 1299,
    "code": "9955",
    "name": "佳龍",
    "market": "上市",
@@ -18198,7 +18221,7 @@
    "employees": 70
   },
   {
-   "rank": 1299,
+   "rank": 1300,
    "code": "6506",
    "name": "雙邦",
    "market": "上櫃",
@@ -18212,7 +18235,7 @@
    "employees": 351
   },
   {
-   "rank": 1300,
+   "rank": 1301,
    "code": "1219",
    "name": "福壽",
    "market": "上市",
@@ -18226,7 +18249,7 @@
    "employees": 609
   },
   {
-   "rank": 1301,
+   "rank": 1302,
    "code": "6213",
    "name": "聯茂",
    "market": "上市",
@@ -18240,7 +18263,7 @@
    "employees": 379
   },
   {
-   "rank": 1302,
+   "rank": 1303,
    "code": "9906",
    "name": "欣巴巴",
    "market": "上市",
@@ -18254,7 +18277,7 @@
    "employees": 73
   },
   {
-   "rank": 1303,
+   "rank": 1304,
    "code": "4111",
    "name": "濟生",
    "market": "上櫃",
@@ -18268,7 +18291,7 @@
    "employees": 266
   },
   {
-   "rank": 1304,
+   "rank": 1305,
    "code": "6961",
    "name": "旅天下",
    "market": "上櫃",
@@ -18282,7 +18305,7 @@
    "employees": 149
   },
   {
-   "rank": 1305,
+   "rank": 1306,
    "code": "3071",
    "name": "協禧",
    "market": "上櫃",
@@ -18296,7 +18319,7 @@
    "employees": 132
   },
   {
-   "rank": 1306,
+   "rank": 1307,
    "code": "3073",
    "name": "天方能源",
    "market": "上櫃",
@@ -18310,7 +18333,7 @@
    "employees": 25
   },
   {
-   "rank": 1307,
+   "rank": 1308,
    "code": "3624",
    "name": "光頡",
    "market": "上櫃",
@@ -18324,7 +18347,7 @@
    "employees": 752
   },
   {
-   "rank": 1308,
+   "rank": 1309,
    "code": "8279",
    "name": "生展",
    "market": "上櫃",
@@ -18338,7 +18361,7 @@
    "employees": 504
   },
   {
-   "rank": 1309,
+   "rank": 1310,
    "code": "2748",
    "name": "雲品",
    "market": "上市",
@@ -18352,7 +18375,7 @@
    "employees": 623
   },
   {
-   "rank": 1310,
+   "rank": 1311,
    "code": "6114",
    "name": "久威",
    "market": "上櫃",
@@ -18366,7 +18389,7 @@
    "employees": 26
   },
   {
-   "rank": 1311,
+   "rank": 1312,
    "code": "7757",
    "name": "金色三麥",
    "market": "上櫃",
@@ -18380,7 +18403,7 @@
    "employees": 480
   },
   {
-   "rank": 1312,
+   "rank": 1313,
    "code": "8234",
    "name": "新漢",
    "market": "上櫃",
@@ -18394,7 +18417,7 @@
    "employees": 818
   },
   {
-   "rank": 1313,
+   "rank": 1314,
    "code": "3323",
    "name": "加百裕",
    "market": "上櫃",
@@ -18408,7 +18431,7 @@
    "employees": 283
   },
   {
-   "rank": 1314,
+   "rank": 1315,
    "code": "7709",
    "name": "榮田",
    "market": "上櫃",
@@ -18422,7 +18445,7 @@
    "employees": 176
   },
   {
-   "rank": 1315,
+   "rank": 1316,
    "code": "3372",
    "name": "典範",
    "market": "上櫃",
@@ -18436,7 +18459,7 @@
    "employees": 382
   },
   {
-   "rank": 1316,
+   "rank": 1317,
    "code": "1727",
    "name": "中華化",
    "market": "上市",
@@ -18450,7 +18473,7 @@
    "employees": 252
   },
   {
-   "rank": 1317,
+   "rank": 1318,
    "code": "2233",
    "name": "宇隆",
    "market": "上市",
@@ -18464,7 +18487,7 @@
    "employees": 356
   },
   {
-   "rank": 1318,
+   "rank": 1319,
    "code": "2351",
    "name": "順德",
    "market": "上市",
@@ -18478,7 +18501,7 @@
    "employees": 1327
   },
   {
-   "rank": 1319,
+   "rank": 1320,
    "code": "3508",
    "name": "位速",
    "market": "上櫃",
@@ -18492,7 +18515,7 @@
    "employees": 66
   },
   {
-   "rank": 1320,
+   "rank": 1321,
    "code": "2030",
    "name": "彰源",
    "market": "上市",
@@ -18506,7 +18529,7 @@
    "employees": 559
   },
   {
-   "rank": 1321,
+   "rank": 1322,
    "code": "4564",
    "name": "元翎",
    "market": "上市",
@@ -18520,7 +18543,7 @@
    "employees": 150
   },
   {
-   "rank": 1322,
+   "rank": 1323,
    "code": "6477",
    "name": "安集",
    "market": "上市",
@@ -18534,7 +18557,7 @@
    "employees": 92
   },
   {
-   "rank": 1323,
+   "rank": 1324,
    "code": "6703",
    "name": "軒郁",
    "market": "上櫃",
@@ -18548,7 +18571,7 @@
    "employees": 96
   },
   {
-   "rank": 1324,
+   "rank": 1325,
    "code": "1466",
    "name": "聚隆",
    "market": "上市",
@@ -18562,7 +18585,7 @@
    "employees": 301
   },
   {
-   "rank": 1325,
+   "rank": 1326,
    "code": "2323",
    "name": "中環",
    "market": "上市",
@@ -18576,7 +18599,7 @@
    "employees": 468
   },
   {
-   "rank": 1326,
+   "rank": 1327,
    "code": "3024",
    "name": "憶聲",
    "market": "上市",
@@ -18590,7 +18613,7 @@
    "employees": 34
   },
   {
-   "rank": 1327,
+   "rank": 1328,
    "code": "4536",
    "name": "拓凱",
    "market": "上市",
@@ -18604,7 +18627,7 @@
    "employees": 235
   },
   {
-   "rank": 1328,
+   "rank": 1329,
    "code": "3287",
    "name": "廣寰科",
    "market": "上櫃",
@@ -18618,7 +18641,7 @@
    "employees": 16
   },
   {
-   "rank": 1329,
+   "rank": 1330,
    "code": "3310",
    "name": "佳穎",
    "market": "上櫃",
@@ -18632,7 +18655,7 @@
    "employees": 83
   },
   {
-   "rank": 1330,
+   "rank": 1331,
    "code": "5310",
    "name": "天剛",
    "market": "上櫃",
@@ -18646,7 +18669,7 @@
    "employees": 10
   },
   {
-   "rank": 1331,
+   "rank": 1332,
    "code": "1217",
    "name": "愛之味",
    "market": "上市",
@@ -18660,7 +18683,7 @@
    "employees": 558
   },
   {
-   "rank": 1332,
+   "rank": 1333,
    "code": "2406",
    "name": "國碩",
    "market": "上市",
@@ -18674,7 +18697,7 @@
    "employees": 118
   },
   {
-   "rank": 1333,
+   "rank": 1334,
    "code": "3021",
    "name": "鴻名",
    "market": "上市",
@@ -18688,7 +18711,7 @@
    "employees": 180
   },
   {
-   "rank": 1334,
+   "rank": 1335,
    "code": "9921",
    "name": "巨大",
    "market": "上市",
@@ -18702,7 +18725,7 @@
    "employees": 2269
   },
   {
-   "rank": 1335,
+   "rank": 1336,
    "code": "4999",
    "name": "鑫禾",
    "market": "上市",
@@ -18716,7 +18739,7 @@
    "employees": 257
   },
   {
-   "rank": 1336,
+   "rank": 1337,
    "code": "6130",
    "name": "上亞科技",
    "market": "上櫃",
@@ -18730,7 +18753,7 @@
    "employees": 21
   },
   {
-   "rank": 1337,
+   "rank": 1338,
    "code": "2910",
    "name": "統領",
    "market": "上市",
@@ -18744,7 +18767,7 @@
    "employees": 54
   },
   {
-   "rank": 1338,
+   "rank": 1339,
    "code": "1294",
    "name": "漢田生技",
    "market": "上櫃",
@@ -18758,7 +18781,7 @@
    "employees": 162
   },
   {
-   "rank": 1339,
+   "rank": 1340,
    "code": "8349",
    "name": "恒耀國際",
    "market": "上櫃",
@@ -18772,7 +18795,7 @@
    "employees": 536
   },
   {
-   "rank": 1340,
+   "rank": 1341,
    "code": "6174",
    "name": "安碁",
    "market": "上櫃",
@@ -18786,7 +18809,7 @@
    "employees": 215
   },
   {
-   "rank": 1341,
+   "rank": 1342,
    "code": "2543",
    "name": "皇昌",
    "market": "上市",
@@ -18800,7 +18823,7 @@
    "employees": 1641
   },
   {
-   "rank": 1342,
+   "rank": 1343,
    "code": "1316",
    "name": "上曜",
    "market": "上市",
@@ -18814,7 +18837,7 @@
    "employees": 36
   },
   {
-   "rank": 1343,
+   "rank": 1344,
    "code": "1342",
    "name": "八貫",
    "market": "上市",
@@ -18828,7 +18851,7 @@
    "employees": 429
   },
   {
-   "rank": 1344,
+   "rank": 1345,
    "code": "5706",
    "name": "鳳凰",
    "market": "上市",
@@ -18842,7 +18865,7 @@
    "employees": 107
   },
   {
-   "rank": 1345,
+   "rank": 1346,
    "code": "6722",
    "name": "輝創",
    "market": "上市",
@@ -18856,7 +18879,7 @@
    "employees": 597
   },
   {
-   "rank": 1346,
+   "rank": 1347,
    "code": "5245",
    "name": "智晶",
    "market": "上櫃",
@@ -18870,7 +18893,7 @@
    "employees": 230
   },
   {
-   "rank": 1347,
+   "rank": 1348,
    "code": "5426",
    "name": "振發",
    "market": "上櫃",
@@ -18884,7 +18907,7 @@
    "employees": 319
   },
   {
-   "rank": 1348,
+   "rank": 1349,
    "code": "1617",
    "name": "榮星",
    "market": "上市",
@@ -18898,7 +18921,7 @@
    "employees": 222
   },
   {
-   "rank": 1349,
+   "rank": 1350,
    "code": "1806",
    "name": "冠軍",
    "market": "上市",
@@ -18912,7 +18935,7 @@
    "employees": 682
   },
   {
-   "rank": 1350,
+   "rank": 1351,
    "code": "4588",
    "name": "玖鼎電力",
    "market": "上市",
@@ -18926,7 +18949,7 @@
    "employees": 107
   },
   {
-   "rank": 1351,
+   "rank": 1352,
    "code": "3521",
    "name": "台鋼建設",
    "market": "上櫃",
@@ -18940,7 +18963,7 @@
    "employees": 21
   },
   {
-   "rank": 1352,
+   "rank": 1353,
    "code": "4905",
    "name": "台聯電",
    "market": "上櫃",
@@ -18954,7 +18977,7 @@
    "employees": 29
   },
   {
-   "rank": 1353,
+   "rank": 1354,
    "code": "6124",
    "name": "業強",
    "market": "上櫃",
@@ -18968,7 +18991,7 @@
    "employees": 19
   },
   {
-   "rank": 1354,
+   "rank": 1355,
    "code": "8049",
    "name": "晶采",
    "market": "上櫃",
@@ -18982,7 +19005,7 @@
    "employees": 135
   },
   {
-   "rank": 1355,
+   "rank": 1356,
    "code": "1445",
    "name": "大宇",
    "market": "上市",
@@ -18996,7 +19019,7 @@
    "employees": 222
   },
   {
-   "rank": 1356,
+   "rank": 1357,
    "code": "2729",
    "name": "瓦城",
    "market": "上櫃",
@@ -19010,7 +19033,7 @@
    "employees": 1319
   },
   {
-   "rank": 1357,
+   "rank": 1358,
    "code": "6615",
    "name": "慧智",
    "market": "上櫃",
@@ -19024,7 +19047,7 @@
    "employees": 72
   },
   {
-   "rank": 1358,
+   "rank": 1359,
    "code": "3056",
    "name": "富華新",
    "market": "上市",
@@ -19038,7 +19061,7 @@
    "employees": 25
   },
   {
-   "rank": 1359,
+   "rank": 1360,
    "code": "3717",
    "name": "聯嘉投控",
    "market": "上市",
@@ -19052,7 +19075,7 @@
    "employees": 617
   },
   {
-   "rank": 1360,
+   "rank": 1361,
    "code": "5531",
    "name": "鄉林",
    "market": "上市",
@@ -19066,7 +19089,7 @@
    "employees": 130
   },
   {
-   "rank": 1361,
+   "rank": 1362,
    "code": "2486",
    "name": "一詮",
    "market": "上市",
@@ -19080,7 +19103,7 @@
    "employees": 856
   },
   {
-   "rank": 1362,
+   "rank": 1363,
    "code": "5258",
    "name": "虹堡",
    "market": "上市",
@@ -19094,7 +19117,7 @@
    "employees": 480
   },
   {
-   "rank": 1363,
+   "rank": 1364,
    "code": "8438",
    "name": "昶昕",
    "market": "上市",
@@ -19108,7 +19131,7 @@
    "employees": 211
   },
   {
-   "rank": 1364,
+   "rank": 1365,
    "code": "6856",
    "name": "鑫傳",
    "market": "上櫃",
@@ -19122,7 +19145,7 @@
    "employees": 97
   },
   {
-   "rank": 1365,
+   "rank": 1366,
    "code": "1453",
    "name": "大將",
    "market": "上市",
@@ -19136,7 +19159,7 @@
    "employees": 11
   },
   {
-   "rank": 1366,
+   "rank": 1367,
    "code": "1569",
    "name": "濱川",
    "market": "上櫃",
@@ -19150,7 +19173,7 @@
    "employees": 46
   },
   {
-   "rank": 1367,
+   "rank": 1368,
    "code": "6821",
    "name": "聯寶",
    "market": "上櫃",
@@ -19164,7 +19187,7 @@
    "employees": 60
   },
   {
-   "rank": 1368,
+   "rank": 1369,
    "code": "8472",
    "name": "夠麻吉",
    "market": "上櫃",
@@ -19178,7 +19201,7 @@
    "employees": 72
   },
   {
-   "rank": 1369,
+   "rank": 1370,
    "code": "1417",
    "name": "嘉裕",
    "market": "上市",
@@ -19192,7 +19215,7 @@
    "employees": 206
   },
   {
-   "rank": 1370,
+   "rank": 1371,
    "code": "1467",
    "name": "南緯",
    "market": "上市",
@@ -19206,7 +19229,7 @@
    "employees": 151
   },
   {
-   "rank": 1371,
+   "rank": 1372,
    "code": "1536",
    "name": "和大",
    "market": "上市",
@@ -19220,7 +19243,7 @@
    "employees": 807
   },
   {
-   "rank": 1372,
+   "rank": 1373,
    "code": "3092",
    "name": "鴻碩",
    "market": "上市",
@@ -19234,7 +19257,7 @@
    "employees": 9
   },
   {
-   "rank": 1373,
+   "rank": 1374,
    "code": "4440",
    "name": "宜新實業",
    "market": "上市",
@@ -19248,7 +19271,7 @@
    "employees": 129
   },
   {
-   "rank": 1374,
+   "rank": 1375,
    "code": "6792",
    "name": "詠業",
    "market": "上市",
@@ -19262,7 +19285,7 @@
    "employees": 478
   },
   {
-   "rank": 1375,
+   "rank": 1376,
    "code": "6185",
    "name": "幃翔",
    "market": "上櫃",
@@ -19276,7 +19299,7 @@
    "employees": 15
   },
   {
-   "rank": 1376,
+   "rank": 1377,
    "code": "6244",
    "name": "茂迪",
    "market": "上櫃",
@@ -19290,7 +19313,7 @@
    "employees": 444
   },
   {
-   "rank": 1377,
+   "rank": 1378,
    "code": "3675",
    "name": "德微",
    "market": "上櫃",
@@ -19304,7 +19327,7 @@
    "employees": 224
   },
   {
-   "rank": 1378,
+   "rank": 1379,
    "code": "4584",
    "name": "君帆",
    "market": "上櫃",
@@ -19318,7 +19341,7 @@
    "employees": 133
   },
   {
-   "rank": 1379,
+   "rank": 1380,
    "code": "9902",
    "name": "台火",
    "market": "上市",
@@ -19332,7 +19355,7 @@
    "employees": 7
   },
   {
-   "rank": 1380,
+   "rank": 1381,
    "code": "3288",
    "name": "點晶",
    "market": "上櫃",
@@ -19346,7 +19369,7 @@
    "employees": 16
   },
   {
-   "rank": 1381,
+   "rank": 1382,
    "code": "4946",
    "name": "辣椒",
    "market": "上櫃",
@@ -19360,7 +19383,7 @@
    "employees": 40
   },
   {
-   "rank": 1382,
+   "rank": 1383,
    "code": "6712",
    "name": "長聖",
    "market": "上櫃",
@@ -19374,7 +19397,7 @@
    "employees": 85
   },
   {
-   "rank": 1383,
+   "rank": 1384,
    "code": "6895",
    "name": "宏碩系統",
    "market": "上櫃",
@@ -19388,7 +19411,7 @@
    "employees": 109
   },
   {
-   "rank": 1384,
+   "rank": 1385,
    "code": "4433",
    "name": "興采",
    "market": "上櫃",
@@ -19402,7 +19425,7 @@
    "employees": 294
   },
   {
-   "rank": 1385,
+   "rank": 1386,
    "code": "5904",
    "name": "寶雅",
    "market": "上櫃",
@@ -19416,7 +19439,7 @@
    "employees": 3186
   },
   {
-   "rank": 1386,
+   "rank": 1387,
    "code": "5364",
    "name": "力麗店",
    "market": "上櫃",
@@ -19430,7 +19453,7 @@
    "employees": 61
   },
   {
-   "rank": 1387,
+   "rank": 1388,
    "code": "9951",
    "name": "皇田",
    "market": "上櫃",
@@ -19444,7 +19467,7 @@
    "employees": 530
   },
   {
-   "rank": 1388,
+   "rank": 1389,
    "code": "2429",
    "name": "銘旺科",
    "market": "上市",
@@ -19458,7 +19481,7 @@
    "employees": 25
   },
   {
-   "rank": 1389,
+   "rank": 1390,
    "code": "3003",
    "name": "健和興",
    "market": "上市",
@@ -19472,7 +19495,7 @@
    "employees": 768
   },
   {
-   "rank": 1390,
+   "rank": 1391,
    "code": "5498",
    "name": "凱崴",
    "market": "上櫃",
@@ -19486,7 +19509,7 @@
    "employees": 117
   },
   {
-   "rank": 1391,
+   "rank": 1392,
    "code": "6127",
    "name": "九豪",
    "market": "上櫃",
@@ -19500,7 +19523,7 @@
    "employees": 171
   },
   {
-   "rank": 1392,
+   "rank": 1393,
    "code": "4540",
    "name": "全球傳動",
    "market": "上市",
@@ -19514,7 +19537,7 @@
    "employees": 878
   },
   {
-   "rank": 1393,
+   "rank": 1394,
    "code": "8033",
    "name": "雷虎",
    "market": "上市",
@@ -19528,7 +19551,7 @@
    "employees": 53
   },
   {
-   "rank": 1394,
+   "rank": 1395,
    "code": "6609",
    "name": "瀧澤科",
    "market": "上櫃",
@@ -19542,7 +19565,7 @@
    "employees": 312
   },
   {
-   "rank": 1395,
+   "rank": 1396,
    "code": "8477",
    "name": "創業家",
    "market": "上櫃",
@@ -19556,7 +19579,7 @@
    "employees": 44
   },
   {
-   "rank": 1396,
+   "rank": 1397,
    "code": "2231",
    "name": "為升",
    "market": "上市",
@@ -19570,7 +19593,7 @@
    "employees": 368
   },
   {
-   "rank": 1397,
+   "rank": 1398,
    "code": "3191",
    "name": "雲嘉南",
    "market": "上櫃",
@@ -19584,7 +19607,7 @@
    "employees": 6
   },
   {
-   "rank": 1398,
+   "rank": 1399,
    "code": "3230",
    "name": "錦明",
    "market": "上櫃",
@@ -19598,7 +19621,7 @@
    "employees": 49
   },
   {
-   "rank": 1399,
+   "rank": 1400,
    "code": "4510",
    "name": "高鋒",
    "market": "上櫃",
@@ -19612,7 +19635,7 @@
    "employees": 238
   },
   {
-   "rank": 1400,
+   "rank": 1401,
    "code": "6228",
    "name": "全譜",
    "market": "上櫃",
@@ -19626,7 +19649,7 @@
    "employees": 23
   },
   {
-   "rank": 1401,
+   "rank": 1402,
    "code": "4545",
    "name": "銘鈺",
    "market": "上市",
@@ -19640,7 +19663,7 @@
    "employees": 505
   },
   {
-   "rank": 1402,
+   "rank": 1403,
    "code": "1315",
    "name": "達新",
    "market": "上市",
@@ -19654,7 +19677,7 @@
    "employees": 332
   },
   {
-   "rank": 1403,
+   "rank": 1404,
    "code": "1597",
    "name": "直得",
    "market": "上市",
@@ -19668,7 +19691,7 @@
    "employees": 301
   },
   {
-   "rank": 1404,
+   "rank": 1405,
    "code": "2402",
    "name": "毅嘉",
    "market": "上市",
@@ -19682,7 +19705,7 @@
    "employees": 175
   },
   {
-   "rank": 1405,
+   "rank": 1406,
    "code": "2752",
    "name": "豆府",
    "market": "上櫃",
@@ -19696,7 +19719,7 @@
    "employees": 908
   },
   {
-   "rank": 1406,
+   "rank": 1407,
    "code": "3115",
    "name": "富榮綱",
    "market": "上櫃",
@@ -19710,7 +19733,7 @@
    "employees": 8
   },
   {
-   "rank": 1407,
+   "rank": 1408,
    "code": "3684",
    "name": "榮昌",
    "market": "上櫃",
@@ -19724,7 +19747,7 @@
    "employees": 87
   },
   {
-   "rank": 1408,
+   "rank": 1409,
    "code": "1563",
    "name": "巧新",
    "market": "上市",
@@ -19738,7 +19761,7 @@
    "employees": 1348
   },
   {
-   "rank": 1409,
+   "rank": 1410,
    "code": "2906",
    "name": "高林",
    "market": "上市",
@@ -19752,7 +19775,7 @@
    "employees": 152
   },
   {
-   "rank": 1410,
+   "rank": 1411,
    "code": "6278",
    "name": "台表科",
    "market": "上市",
@@ -19766,7 +19789,7 @@
    "employees": 749
   },
   {
-   "rank": 1411,
+   "rank": 1412,
    "code": "8443",
    "name": "阿瘦",
    "market": "上市",
@@ -19780,7 +19803,7 @@
    "employees": 350
   },
   {
-   "rank": 1412,
+   "rank": 1413,
    "code": "1268",
    "name": "漢來美食",
    "market": "上櫃",
@@ -19794,7 +19817,7 @@
    "employees": 1581
   },
   {
-   "rank": 1413,
+   "rank": 1414,
    "code": "8183",
    "name": "精星",
    "market": "上櫃",
@@ -19808,7 +19831,7 @@
    "employees": 180
   },
   {
-   "rank": 1414,
+   "rank": 1415,
    "code": "1215",
    "name": "卜蜂",
    "market": "上市",
@@ -19822,7 +19845,7 @@
    "employees": null
   },
   {
-   "rank": 1415,
+   "rank": 1416,
    "code": "1734",
    "name": "杏輝",
    "market": "上市",
@@ -19836,7 +19859,7 @@
    "employees": 753
   },
   {
-   "rank": 1416,
+   "rank": 1417,
    "code": "3465",
    "name": "進泰電子",
    "market": "上櫃",
@@ -19850,7 +19873,7 @@
    "employees": 18
   },
   {
-   "rank": 1417,
+   "rank": 1418,
    "code": "4561",
    "name": "健椿",
    "market": "上櫃",
@@ -19864,7 +19887,7 @@
    "employees": 249
   },
   {
-   "rank": 1418,
+   "rank": 1419,
    "code": "5460",
    "name": "同協",
    "market": "上櫃",
@@ -19878,7 +19901,7 @@
    "employees": 67
   },
   {
-   "rank": 1419,
+   "rank": 1420,
    "code": "1475",
    "name": "業旺",
    "market": "上市",
@@ -19892,7 +19915,7 @@
    "employees": 20
   },
   {
-   "rank": 1420,
+   "rank": 1421,
    "code": "8936",
    "name": "國統",
    "market": "上櫃",
@@ -19906,7 +19929,7 @@
    "employees": 385
   },
   {
-   "rank": 1421,
+   "rank": 1422,
    "code": "1903",
    "name": "士紙",
    "market": "上市",
@@ -19920,7 +19943,7 @@
    "employees": 39
   },
   {
-   "rank": 1422,
+   "rank": 1423,
    "code": "6472",
    "name": "保瑞",
    "market": "上市",
@@ -19934,7 +19957,7 @@
    "employees": 155
   },
   {
-   "rank": 1423,
+   "rank": 1424,
    "code": "4908",
    "name": "前鼎",
    "market": "上櫃",
@@ -19948,7 +19971,7 @@
    "employees": 259
   },
   {
-   "rank": 1424,
+   "rank": 1425,
    "code": "6284",
    "name": "佳邦",
    "market": "上櫃",
@@ -19962,7 +19985,7 @@
    "employees": 844
   },
   {
-   "rank": 1425,
+   "rank": 1426,
    "code": "3152",
    "name": "璟德",
    "market": "上櫃",
@@ -19976,7 +19999,7 @@
    "employees": 264
   },
   {
-   "rank": 1426,
+   "rank": 1427,
    "code": "3441",
    "name": "聯一光電",
    "market": "上櫃",
@@ -19990,7 +20013,7 @@
    "employees": 16
   },
   {
-   "rank": 1427,
+   "rank": 1428,
    "code": "1203",
    "name": "味王",
    "market": "上市",
@@ -20004,7 +20027,7 @@
    "employees": 666
   },
   {
-   "rank": 1428,
+   "rank": 1429,
    "code": "2460",
    "name": "建通",
    "market": "上市",
@@ -20018,7 +20041,7 @@
    "employees": 122
   },
   {
-   "rank": 1429,
+   "rank": 1430,
    "code": "6236",
    "name": "中湛",
    "market": "上櫃",
@@ -20032,7 +20055,7 @@
    "employees": 8
   },
   {
-   "rank": 1430,
+   "rank": 1431,
    "code": "6527",
    "name": "明達醫",
    "market": "上櫃",
@@ -20046,7 +20069,7 @@
    "employees": 105
   },
   {
-   "rank": 1431,
+   "rank": 1432,
    "code": "1323",
    "name": "永裕",
    "market": "上市",
@@ -20060,7 +20083,7 @@
    "employees": 620
   },
   {
-   "rank": 1432,
+   "rank": 1433,
    "code": "4583",
    "name": "台灣精銳",
    "market": "上市",
@@ -20074,7 +20097,7 @@
    "employees": 710
   },
   {
-   "rank": 1433,
+   "rank": 1434,
    "code": "6771",
    "name": "平和環保-創",
    "market": "上市",
@@ -20088,7 +20111,7 @@
    "employees": 66
   },
   {
-   "rank": 1434,
+   "rank": 1435,
    "code": "6603",
    "name": "富強鑫",
    "market": "上櫃",
@@ -20102,7 +20125,7 @@
    "employees": 240
   },
   {
-   "rank": 1435,
+   "rank": 1436,
    "code": "6654",
    "name": "天正國際",
    "market": "上櫃",
@@ -20116,7 +20139,7 @@
    "employees": 108
   },
   {
-   "rank": 1436,
+   "rank": 1437,
    "code": "6767",
    "name": "台微醫",
    "market": "上櫃",
@@ -20130,7 +20153,7 @@
    "employees": 47
   },
   {
-   "rank": 1437,
+   "rank": 1438,
    "code": "1455",
    "name": "集盛",
    "market": "上市",
@@ -20144,7 +20167,7 @@
    "employees": 1169
   },
   {
-   "rank": 1438,
+   "rank": 1439,
    "code": "4163",
    "name": "鐿鈦",
    "market": "上櫃",
@@ -20158,7 +20181,7 @@
    "employees": 645
   },
   {
-   "rank": 1439,
+   "rank": 1440,
    "code": "3051",
    "name": "力特",
    "market": "上市",
@@ -20172,7 +20195,7 @@
    "employees": 558
   },
   {
-   "rank": 1440,
+   "rank": 1441,
    "code": "4911",
    "name": "德英",
    "market": "上櫃",
@@ -20186,7 +20209,7 @@
    "employees": 28
   },
   {
-   "rank": 1441,
+   "rank": 1442,
    "code": "1410",
    "name": "南染",
    "market": "上市",
@@ -20200,7 +20223,7 @@
    "employees": 8
   },
   {
-   "rank": 1442,
+   "rank": 1443,
    "code": "6184",
    "name": "大豐電",
    "market": "上市",
@@ -20214,7 +20237,7 @@
    "employees": 66
   },
   {
-   "rank": 1443,
+   "rank": 1444,
    "code": "8473",
    "name": "山林水",
    "market": "上市",
@@ -20228,7 +20251,7 @@
    "employees": 520
   },
   {
-   "rank": 1444,
+   "rank": 1445,
    "code": "9944",
    "name": "新麗",
    "market": "上市",
@@ -20242,7 +20265,7 @@
    "employees": 191
   },
   {
-   "rank": 1445,
+   "rank": 1446,
    "code": "6151",
    "name": "晉倫",
    "market": "上櫃",
@@ -20256,7 +20279,7 @@
    "employees": 66
   },
   {
-   "rank": 1446,
+   "rank": 1447,
    "code": "1528",
    "name": "恩德",
    "market": "上市",
@@ -20270,7 +20293,7 @@
    "employees": 261
   },
   {
-   "rank": 1447,
+   "rank": 1448,
    "code": "6464",
    "name": "台數科",
    "market": "上市",
@@ -20284,7 +20307,7 @@
    "employees": 44
   },
   {
-   "rank": 1448,
+   "rank": 1449,
    "code": "8222",
    "name": "寶一",
    "market": "上市",
@@ -20298,7 +20321,7 @@
    "employees": 225
   },
   {
-   "rank": 1449,
+   "rank": 1450,
    "code": "8071",
    "name": "能率網通",
    "market": "上櫃",
@@ -20312,7 +20335,7 @@
    "employees": 18
   },
   {
-   "rank": 1450,
+   "rank": 1451,
    "code": "2616",
    "name": "山隆",
    "market": "上市",
@@ -20326,7 +20349,7 @@
    "employees": 590
   },
   {
-   "rank": 1451,
+   "rank": 1452,
    "code": "3050",
    "name": "鈺德",
    "market": "上市",
@@ -20340,7 +20363,7 @@
    "employees": 176
   },
   {
-   "rank": 1452,
+   "rank": 1453,
    "code": "3501",
    "name": "維熹",
    "market": "上市",
@@ -20354,7 +20377,7 @@
    "employees": 244
   },
   {
-   "rank": 1453,
+   "rank": 1454,
    "code": "2743",
    "name": "山富",
    "market": "上櫃",
@@ -20368,7 +20391,7 @@
    "employees": 295
   },
   {
-   "rank": 1454,
+   "rank": 1455,
    "code": "6721",
    "name": "信實",
    "market": "上櫃",
@@ -20382,7 +20405,7 @@
    "employees": 569
   },
   {
-   "rank": 1455,
+   "rank": 1456,
    "code": "6844",
    "name": "諾貝兒",
    "market": "上櫃",
@@ -20396,7 +20419,7 @@
    "employees": 730
   },
   {
-   "rank": 1456,
+   "rank": 1457,
    "code": "1521",
    "name": "大億",
    "market": "上市",
@@ -20410,7 +20433,7 @@
    "employees": 668
   },
   {
-   "rank": 1457,
+   "rank": 1458,
    "code": "2474",
    "name": "可成",
    "market": "上市",
@@ -20424,7 +20447,7 @@
    "employees": 2714
   },
   {
-   "rank": 1458,
+   "rank": 1459,
    "code": "4126",
    "name": "太醫",
    "market": "上櫃",
@@ -20438,7 +20461,7 @@
    "employees": 767
   },
   {
-   "rank": 1459,
+   "rank": 1460,
    "code": "6859",
    "name": "伯特光",
    "market": "上櫃",
@@ -20452,7 +20475,7 @@
    "employees": 310
   },
   {
-   "rank": 1460,
+   "rank": 1461,
    "code": "7584",
    "name": "樂意",
    "market": "上櫃",
@@ -20466,7 +20489,7 @@
    "employees": 170
   },
   {
-   "rank": 1461,
+   "rank": 1462,
    "code": "4973",
    "name": "廣穎電通",
    "market": "上櫃",
@@ -20480,7 +20503,7 @@
    "employees": 339
   },
   {
-   "rank": 1462,
+   "rank": 1463,
    "code": "5878",
    "name": "台名",
    "market": "上櫃",
@@ -20494,7 +20517,7 @@
    "employees": 48
   },
   {
-   "rank": 1463,
+   "rank": 1464,
    "code": "8074",
    "name": "鉅橡",
    "market": "上櫃",
@@ -20508,7 +20531,7 @@
    "employees": 241
   },
   {
-   "rank": 1464,
+   "rank": 1465,
    "code": "1583",
    "name": "程泰",
    "market": "上市",
@@ -20522,7 +20545,7 @@
    "employees": 381
   },
   {
-   "rank": 1465,
+   "rank": 1466,
    "code": "9914",
    "name": "美利達",
    "market": "上市",
@@ -20536,7 +20559,7 @@
    "employees": 1084
   },
   {
-   "rank": 1466,
+   "rank": 1467,
    "code": "3290",
    "name": "東浦",
    "market": "上櫃",
@@ -20550,7 +20573,7 @@
    "employees": 85
   },
   {
-   "rank": 1467,
+   "rank": 1468,
    "code": "5301",
    "name": "寶得利",
    "market": "上櫃",
@@ -20564,7 +20587,7 @@
    "employees": 10
   },
   {
-   "rank": 1468,
+   "rank": 1469,
    "code": "7777",
    "name": "能率亞洲",
    "market": "上櫃",
@@ -20578,7 +20601,7 @@
    "employees": 2
   },
   {
-   "rank": 1469,
+   "rank": 1470,
    "code": "1752",
    "name": "南光",
    "market": "上市",
@@ -20592,7 +20615,7 @@
    "employees": 624
   },
   {
-   "rank": 1470,
+   "rank": 1471,
    "code": "9929",
    "name": "秋雨",
    "market": "上市",
@@ -20606,7 +20629,7 @@
    "employees": 51
   },
   {
-   "rank": 1471,
+   "rank": 1472,
    "code": "3171",
    "name": "炎洲流通",
    "market": "上櫃",
@@ -20620,7 +20643,7 @@
    "employees": 149
   },
   {
-   "rank": 1472,
+   "rank": 1473,
    "code": "5356",
    "name": "協益",
    "market": "上櫃",
@@ -20634,7 +20657,7 @@
    "employees": 340
   },
   {
-   "rank": 1473,
+   "rank": 1474,
    "code": "8421",
    "name": "旭源",
    "market": "上櫃",
@@ -20648,7 +20671,7 @@
    "employees": 192
   },
   {
-   "rank": 1474,
+   "rank": 1475,
    "code": "1725",
    "name": "元禎",
    "market": "上市",
@@ -20662,7 +20685,7 @@
    "employees": 86
   },
   {
-   "rank": 1475,
+   "rank": 1476,
    "code": "3023",
    "name": "信邦",
    "market": "上市",
@@ -20676,7 +20699,7 @@
    "employees": 1199
   },
   {
-   "rank": 1476,
+   "rank": 1477,
    "code": "6269",
    "name": "台郡",
    "market": "上市",
@@ -20690,7 +20713,7 @@
    "employees": 1841
   },
   {
-   "rank": 1477,
+   "rank": 1478,
    "code": "6742",
    "name": "澤米",
    "market": "上市",
@@ -20704,7 +20727,7 @@
    "employees": 215
   },
   {
-   "rank": 1478,
+   "rank": 1479,
    "code": "1259",
    "name": "安心",
    "market": "上櫃",
@@ -20718,7 +20741,7 @@
    "employees": 988
   },
   {
-   "rank": 1479,
+   "rank": 1480,
    "code": "2073",
    "name": "雄順",
    "market": "上櫃",
@@ -20732,7 +20755,7 @@
    "employees": 166
   },
   {
-   "rank": 1480,
+   "rank": 1481,
    "code": "5450",
    "name": "南良",
    "market": "上櫃",
@@ -20746,7 +20769,7 @@
    "employees": 480
   },
   {
-   "rank": 1481,
+   "rank": 1482,
    "code": "6210",
    "name": "慶生",
    "market": "上櫃",
@@ -20760,7 +20783,7 @@
    "employees": 221
   },
   {
-   "rank": 1482,
+   "rank": 1483,
    "code": "3531",
    "name": "先益",
    "market": "上櫃",
@@ -20774,7 +20797,7 @@
    "employees": 99
   },
   {
-   "rank": 1483,
+   "rank": 1484,
    "code": "3629",
    "name": "地心引力",
    "market": "上櫃",
@@ -20788,7 +20811,7 @@
    "employees": 8
   },
   {
-   "rank": 1484,
+   "rank": 1485,
    "code": "3149",
    "name": "正達",
    "market": "上市",
@@ -20802,7 +20825,7 @@
    "employees": 349
   },
   {
-   "rank": 1485,
+   "rank": 1486,
    "code": "4133",
    "name": "亞諾法",
    "market": "上市",
@@ -20816,7 +20839,7 @@
    "employees": 81
   },
   {
-   "rank": 1486,
+   "rank": 1487,
    "code": "4175",
    "name": "杏一",
    "market": "上櫃",
@@ -20830,7 +20853,7 @@
    "employees": 1186
   },
   {
-   "rank": 1487,
+   "rank": 1488,
    "code": "6482",
    "name": "弘煜科",
    "market": "上櫃",
@@ -20844,7 +20867,7 @@
    "employees": 53
   },
   {
-   "rank": 1488,
+   "rank": 1489,
    "code": "8277",
    "name": "商丞",
    "market": "上櫃",
@@ -20858,7 +20881,7 @@
    "employees": 51
   },
   {
-   "rank": 1489,
+   "rank": 1490,
    "code": "3354",
    "name": "律勝",
    "market": "上櫃",
@@ -20872,7 +20895,7 @@
    "employees": 57
   },
   {
-   "rank": 1490,
+   "rank": 1491,
    "code": "1614",
    "name": "三洋電",
    "market": "上市",
@@ -20886,7 +20909,7 @@
    "employees": 915
   },
   {
-   "rank": 1491,
+   "rank": 1492,
    "code": "2114",
    "name": "鑫永銓",
    "market": "上市",
@@ -20900,7 +20923,7 @@
    "employees": 101
   },
   {
-   "rank": 1492,
+   "rank": 1493,
    "code": "3623",
    "name": "富晶通",
    "market": "上櫃",
@@ -20914,7 +20937,7 @@
    "employees": 93
   },
   {
-   "rank": 1493,
+   "rank": 1494,
    "code": "1522",
    "name": "堤維西",
    "market": "上市",
@@ -20928,7 +20951,7 @@
    "employees": 1579
   },
   {
-   "rank": 1494,
+   "rank": 1495,
    "code": "6153",
    "name": "嘉聯益",
    "market": "上市",
@@ -20942,7 +20965,7 @@
    "employees": 998
   },
   {
-   "rank": 1495,
+   "rank": 1496,
    "code": "2745",
    "name": "五福",
    "market": "上櫃",
@@ -20956,7 +20979,7 @@
    "employees": 451
   },
   {
-   "rank": 1496,
+   "rank": 1497,
    "code": "3376",
    "name": "新日興",
    "market": "上市",
@@ -20970,7 +20993,7 @@
    "employees": 1962
   },
   {
-   "rank": 1497,
+   "rank": 1498,
    "code": "2751",
    "name": "王座",
    "market": "上櫃",
@@ -20984,7 +21007,7 @@
    "employees": 387
   },
   {
-   "rank": 1498,
+   "rank": 1499,
    "code": "1233",
    "name": "天仁",
    "market": "上市",
@@ -20998,7 +21021,7 @@
    "employees": 774
   },
   {
-   "rank": 1499,
+   "rank": 1500,
    "code": "2420",
    "name": "新巨",
    "market": "上市",
@@ -21012,7 +21035,7 @@
    "employees": 506
   },
   {
-   "rank": 1500,
+   "rank": 1501,
    "code": "5523",
    "name": "豐謙",
    "market": "上櫃",
@@ -21026,7 +21049,7 @@
    "employees": 13
   },
   {
-   "rank": 1501,
+   "rank": 1502,
    "code": "1568",
    "name": "倉佑",
    "market": "上市",
@@ -21040,7 +21063,7 @@
    "employees": 299
   },
   {
-   "rank": 1502,
+   "rank": 1503,
    "code": "2022",
    "name": "聚亨",
    "market": "上市",
@@ -21054,7 +21077,7 @@
    "employees": 100
   },
   {
-   "rank": 1503,
+   "rank": 1504,
    "code": "8940",
    "name": "新天地",
    "market": "上市",
@@ -21068,7 +21091,7 @@
    "employees": 342
   },
   {
-   "rank": 1504,
+   "rank": 1505,
    "code": "1440",
    "name": "南紡",
    "market": "上市",
@@ -21082,7 +21105,7 @@
    "employees": 777
   },
   {
-   "rank": 1505,
+   "rank": 1506,
    "code": "1447",
    "name": "力鵬",
    "market": "上市",
@@ -21096,7 +21119,7 @@
    "employees": 1243
   },
   {
-   "rank": 1506,
+   "rank": 1507,
    "code": "2024",
    "name": "志聯",
    "market": "上市",
@@ -21110,7 +21133,7 @@
    "employees": 127
   },
   {
-   "rank": 1507,
+   "rank": 1508,
    "code": "2349",
    "name": "錸德",
    "market": "上市",
@@ -21124,7 +21147,7 @@
    "employees": 577
   },
   {
-   "rank": 1508,
+   "rank": 1509,
    "code": "4161",
    "name": "聿新科",
    "market": "上櫃",
@@ -21138,7 +21161,7 @@
    "employees": 171
   },
   {
-   "rank": 1509,
+   "rank": 1510,
    "code": "2484",
    "name": "希華",
    "market": "上市",
@@ -21152,7 +21175,7 @@
    "employees": 680
   },
   {
-   "rank": 1510,
+   "rank": 1511,
    "code": "3708",
    "name": "上緯投控",
    "market": "上市",
@@ -21166,7 +21189,7 @@
    "employees": 285
   },
   {
-   "rank": 1511,
+   "rank": 1512,
    "code": "5344",
    "name": "立衛",
    "market": "上櫃",
@@ -21180,7 +21203,7 @@
    "employees": 211
   },
   {
-   "rank": 1512,
+   "rank": 1513,
    "code": "1603",
    "name": "華電",
    "market": "上市",
@@ -21194,7 +21217,7 @@
    "employees": 567
   },
   {
-   "rank": 1513,
+   "rank": 1514,
    "code": "3467",
    "name": "台灣精材",
    "market": "上櫃",
@@ -21208,7 +21231,7 @@
    "employees": 182
   },
   {
-   "rank": 1514,
+   "rank": 1515,
    "code": "4107",
    "name": "邦特",
    "market": "上櫃",
@@ -21222,7 +21245,7 @@
    "employees": 406
   },
   {
-   "rank": 1515,
+   "rank": 1516,
    "code": "4549",
    "name": "桓達",
    "market": "上櫃",
@@ -21236,7 +21259,7 @@
    "employees": 236
   },
   {
-   "rank": 1516,
+   "rank": 1517,
    "code": "6194",
    "name": "育富",
    "market": "上櫃",
@@ -21250,7 +21273,7 @@
    "employees": 4
   },
   {
-   "rank": 1517,
+   "rank": 1518,
    "code": "2012",
    "name": "春雨",
    "market": "上市",
@@ -21264,7 +21287,7 @@
    "employees": 519
   },
   {
-   "rank": 1518,
+   "rank": 1519,
    "code": "2025",
    "name": "千興",
    "market": "上市",
@@ -21278,7 +21301,7 @@
    "employees": 67
   },
   {
-   "rank": 1519,
+   "rank": 1520,
    "code": "2032",
    "name": "新鋼",
    "market": "上市",
@@ -21292,7 +21315,7 @@
    "employees": 162
   },
   {
-   "rank": 1520,
+   "rank": 1521,
    "code": "3437",
    "name": "榮創",
    "market": "上市",
@@ -21306,7 +21329,7 @@
    "employees": 611
   },
   {
-   "rank": 1521,
+   "rank": 1522,
    "code": "4306",
    "name": "炎洲",
    "market": "上市",
@@ -21320,7 +21343,7 @@
    "employees": 304
   },
   {
-   "rank": 1522,
+   "rank": 1523,
    "code": "3666",
    "name": "光耀",
    "market": "上櫃",
@@ -21334,7 +21357,7 @@
    "employees": 143
   },
   {
-   "rank": 1523,
+   "rank": 1524,
    "code": "6217",
    "name": "中探針",
    "market": "上櫃",
@@ -21348,7 +21371,7 @@
    "employees": 198
   },
   {
-   "rank": 1524,
+   "rank": 1525,
    "code": "8077",
    "name": "洛碁",
    "market": "上櫃",
@@ -21362,7 +21385,7 @@
    "employees": 219
   },
   {
-   "rank": 1525,
+   "rank": 1526,
    "code": "2228",
    "name": "劍麟",
    "market": "上市",
@@ -21376,7 +21399,7 @@
    "employees": 452
   },
   {
-   "rank": 1526,
+   "rank": 1527,
    "code": "1742",
    "name": "台蠟",
    "market": "上櫃",
@@ -21390,7 +21413,7 @@
    "employees": 23
   },
   {
-   "rank": 1527,
+   "rank": 1528,
    "code": "6418",
    "name": "詠昇",
    "market": "上櫃",
@@ -21404,7 +21427,7 @@
    "employees": 32
   },
   {
-   "rank": 1528,
+   "rank": 1529,
    "code": "3305",
    "name": "昇貿",
    "market": "上市",
@@ -21418,7 +21441,7 @@
    "employees": 154
   },
   {
-   "rank": 1529,
+   "rank": 1530,
    "code": "9938",
    "name": "百和",
    "market": "上市",
@@ -21432,7 +21455,7 @@
    "employees": 1006
   },
   {
-   "rank": 1530,
+   "rank": 1531,
    "code": "8042",
    "name": "金山電",
    "market": "上櫃",
@@ -21446,7 +21469,7 @@
    "employees": 57
   },
   {
-   "rank": 1531,
+   "rank": 1532,
    "code": "1474",
    "name": "弘裕",
    "market": "上市",
@@ -21460,7 +21483,7 @@
    "employees": 413
   },
   {
-   "rank": 1532,
+   "rank": 1533,
    "code": "1524",
    "name": "耿鼎",
    "market": "上市",
@@ -21474,7 +21497,7 @@
    "employees": 422
   },
   {
-   "rank": 1533,
+   "rank": 1534,
    "code": "3504",
    "name": "揚明光",
    "market": "上市",
@@ -21488,7 +21511,7 @@
    "employees": 717
   },
   {
-   "rank": 1534,
+   "rank": 1535,
    "code": "4736",
    "name": "泰博",
    "market": "上市",
@@ -21502,7 +21525,7 @@
    "employees": 907
   },
   {
-   "rank": 1535,
+   "rank": 1536,
    "code": "6982",
    "name": "大井泵浦",
    "market": "上櫃",
@@ -21516,7 +21539,7 @@
    "employees": 442
   },
   {
-   "rank": 1536,
+   "rank": 1537,
    "code": "1108",
    "name": "幸福",
    "market": "上市",
@@ -21530,7 +21553,7 @@
    "employees": 371
   },
   {
-   "rank": 1537,
+   "rank": 1538,
    "code": "2642",
    "name": "宅配通",
    "market": "上市",
@@ -21544,7 +21567,7 @@
    "employees": 1622
   },
   {
-   "rank": 1538,
+   "rank": 1539,
    "code": "4956",
    "name": "光鋐",
    "market": "上市",
@@ -21558,7 +21581,7 @@
    "employees": 386
   },
   {
-   "rank": 1539,
+   "rank": 1540,
    "code": "2754",
    "name": "亞洲藏壽司",
    "market": "上櫃",
@@ -21572,7 +21595,7 @@
    "employees": 582
   },
   {
-   "rank": 1540,
+   "rank": 1541,
    "code": "4528",
    "name": "江興鍛",
    "market": "上櫃",
@@ -21586,7 +21609,7 @@
    "employees": 190
   },
   {
-   "rank": 1541,
+   "rank": 1542,
    "code": "6843",
    "name": "進典",
    "market": "上櫃",
@@ -21600,7 +21623,7 @@
    "employees": 114
   },
   {
-   "rank": 1542,
+   "rank": 1543,
    "code": "8440",
    "name": "綠電",
    "market": "上櫃",
@@ -21614,7 +21637,7 @@
    "employees": 98
   },
   {
-   "rank": 1543,
+   "rank": 1544,
    "code": "1527",
    "name": "鑽全",
    "market": "上市",
@@ -21628,7 +21651,7 @@
    "employees": 657
   },
   {
-   "rank": 1544,
+   "rank": 1545,
    "code": "9943",
    "name": "好樂迪",
    "market": "上市",
@@ -21642,7 +21665,7 @@
    "employees": 799
   },
   {
-   "rank": 1545,
+   "rank": 1546,
    "code": "4729",
    "name": "熒茂",
    "market": "上櫃",
@@ -21656,7 +21679,7 @@
    "employees": 278
   },
   {
-   "rank": 1546,
+   "rank": 1547,
    "code": "8050",
    "name": "廣積",
    "market": "上櫃",
@@ -21670,7 +21693,7 @@
    "employees": 712
   },
   {
-   "rank": 1547,
+   "rank": 1548,
    "code": "3164",
    "name": "景岳",
    "market": "上市",
@@ -21684,7 +21707,7 @@
    "employees": 110
   },
   {
-   "rank": 1548,
+   "rank": 1549,
    "code": "5291",
    "name": "邑昇",
    "market": "上櫃",
@@ -21698,7 +21721,7 @@
    "employees": 273
   },
   {
-   "rank": 1549,
+   "rank": 1550,
    "code": "5432",
    "name": "新門",
    "market": "上櫃",
@@ -21712,7 +21735,7 @@
    "employees": 12
   },
   {
-   "rank": 1550,
+   "rank": 1551,
    "code": "1438",
    "name": "三地開發",
    "market": "上市",
@@ -21726,7 +21749,7 @@
    "employees": 8
   },
   {
-   "rank": 1551,
+   "rank": 1552,
    "code": "2426",
    "name": "鼎元",
    "market": "上市",
@@ -21740,7 +21763,7 @@
    "employees": 743
   },
   {
-   "rank": 1552,
+   "rank": 1553,
    "code": "4590",
    "name": "富田",
    "market": "上市",
@@ -21754,7 +21777,7 @@
    "employees": 320
   },
   {
-   "rank": 1553,
+   "rank": 1554,
    "code": "9919",
    "name": "康那香",
    "market": "上市",
@@ -21768,7 +21791,7 @@
    "employees": 514
   },
   {
-   "rank": 1554,
+   "rank": 1555,
    "code": "6234",
    "name": "高僑",
    "market": "上櫃",
@@ -21782,7 +21805,7 @@
    "employees": 141
   },
   {
-   "rank": 1555,
+   "rank": 1556,
    "code": "2491",
    "name": "吉祥全",
    "market": "上市",
@@ -21796,7 +21819,7 @@
    "employees": 10
   },
   {
-   "rank": 1556,
+   "rank": 1557,
    "code": "2636",
    "name": "台驊控股",
    "market": "上市",
@@ -21810,7 +21833,7 @@
    "employees": 354
   },
   {
-   "rank": 1557,
+   "rank": 1558,
    "code": "6952",
    "name": "大武山",
    "market": "上市",
@@ -21824,7 +21847,7 @@
    "employees": 209
   },
   {
-   "rank": 1558,
+   "rank": 1559,
    "code": "6140",
    "name": "訊達電腦",
    "market": "上櫃",
@@ -21838,7 +21861,7 @@
    "employees": 103
   },
   {
-   "rank": 1559,
+   "rank": 1560,
    "code": "6840",
    "name": "東研信超",
    "market": "上櫃",
@@ -21852,7 +21875,7 @@
    "employees": 180
   },
   {
-   "rank": 1560,
+   "rank": 1561,
    "code": "8044",
    "name": "網家",
    "market": "上櫃",
@@ -21866,7 +21889,7 @@
    "employees": 1183
   },
   {
-   "rank": 1561,
+   "rank": 1562,
    "code": "1418",
    "name": "東華",
    "market": "上市",
@@ -21880,7 +21903,7 @@
    "employees": 27
   },
   {
-   "rank": 1562,
+   "rank": 1563,
    "code": "2221",
    "name": "大甲",
    "market": "上櫃",
@@ -21894,7 +21917,7 @@
    "employees": 208
   },
   {
-   "rank": 1563,
+   "rank": 1564,
    "code": "6530",
    "name": "創威",
    "market": "上櫃",
@@ -21908,7 +21931,7 @@
    "employees": 67
   },
   {
-   "rank": 1564,
+   "rank": 1565,
    "code": "8289",
    "name": "泰藝",
    "market": "上櫃",
@@ -21922,7 +21945,7 @@
    "employees": 200
   },
   {
-   "rank": 1565,
+   "rank": 1566,
    "code": "1515",
    "name": "力山",
    "market": "上市",
@@ -21936,7 +21959,7 @@
    "employees": 613
   },
   {
-   "rank": 1566,
+   "rank": 1567,
    "code": "6606",
    "name": "建德工業",
    "market": "上市",
@@ -21950,7 +21973,7 @@
    "employees": 63
   },
   {
-   "rank": 1567,
+   "rank": 1568,
    "code": "3086",
    "name": "華義",
    "market": "上櫃",
@@ -21964,7 +21987,7 @@
    "employees": 90
   },
   {
-   "rank": 1568,
+   "rank": 1569,
    "code": "4420",
    "name": "光明",
    "market": "上櫃",
@@ -21978,7 +22001,7 @@
    "employees": 101
   },
   {
-   "rank": 1569,
+   "rank": 1570,
    "code": "6195",
    "name": "詩肯",
    "market": "上櫃",
@@ -21992,7 +22015,7 @@
    "employees": 313
   },
   {
-   "rank": 1570,
+   "rank": 1571,
    "code": "6469",
    "name": "大樹",
    "market": "上櫃",
@@ -22006,7 +22029,7 @@
    "employees": 1902
   },
   {
-   "rank": 1571,
+   "rank": 1572,
    "code": "3038",
    "name": "全台",
    "market": "上市",
@@ -22020,7 +22043,7 @@
    "employees": 785
   },
   {
-   "rank": 1572,
+   "rank": 1573,
    "code": "2065",
    "name": "世豐",
    "market": "上櫃",
@@ -22034,7 +22057,7 @@
    "employees": 278
   },
   {
-   "rank": 1573,
+   "rank": 1574,
    "code": "2640",
    "name": "大車隊",
    "market": "上櫃",
@@ -22048,7 +22071,7 @@
    "employees": 510
   },
   {
-   "rank": 1574,
+   "rank": 1575,
    "code": "6199",
    "name": "天品",
    "market": "上櫃",
@@ -22062,7 +22085,7 @@
    "employees": 7
   },
   {
-   "rank": 1575,
+   "rank": 1576,
    "code": "2302",
    "name": "麗正",
    "market": "上市",
@@ -22076,7 +22099,7 @@
    "employees": 42
   },
   {
-   "rank": 1576,
+   "rank": 1577,
    "code": "5321",
    "name": "美而快",
    "market": "上櫃",
@@ -22090,7 +22113,7 @@
    "employees": 44
   },
   {
-   "rank": 1577,
+   "rank": 1578,
    "code": "8905",
    "name": "裕國",
    "market": "上櫃",
@@ -22104,7 +22127,7 @@
    "employees": 176
   },
   {
-   "rank": 1578,
+   "rank": 1579,
    "code": "1810",
    "name": "和成",
    "market": "上市",
@@ -22118,7 +22141,7 @@
    "employees": 897
   },
   {
-   "rank": 1579,
+   "rank": 1580,
    "code": "2369",
    "name": "菱生",
    "market": "上市",
@@ -22132,7 +22155,7 @@
    "employees": 2055
   },
   {
-   "rank": 1580,
+   "rank": 1581,
    "code": "6209",
    "name": "今國光",
    "market": "上市",
@@ -22146,7 +22169,7 @@
    "employees": 642
   },
   {
-   "rank": 1581,
+   "rank": 1582,
    "code": "6969",
    "name": "成信實業*-創",
    "market": "上市",
@@ -22160,7 +22183,7 @@
    "employees": 100
   },
   {
-   "rank": 1582,
+   "rank": 1583,
    "code": "1468",
    "name": "昶和",
    "market": "上市",
@@ -22174,7 +22197,7 @@
    "employees": 39
   },
   {
-   "rank": 1583,
+   "rank": 1584,
    "code": "1733",
    "name": "五鼎",
    "market": "上市",
@@ -22188,7 +22211,7 @@
    "employees": 632
   },
   {
-   "rank": 1584,
+   "rank": 1585,
    "code": "2913",
    "name": "農林",
    "market": "上市",
@@ -22202,7 +22225,7 @@
    "employees": 182
   },
   {
-   "rank": 1585,
+   "rank": 1586,
    "code": "3229",
    "name": "晟鈦",
    "market": "上市",
@@ -22216,7 +22239,7 @@
    "employees": 200
   },
   {
-   "rank": 1586,
+   "rank": 1587,
    "code": "6582",
    "name": "申豐",
    "market": "上市",
@@ -22230,7 +22253,7 @@
    "employees": 135
   },
   {
-   "rank": 1587,
+   "rank": 1588,
    "code": "4102",
    "name": "永日",
    "market": "上櫃",
@@ -22244,7 +22267,7 @@
    "employees": 128
   },
   {
-   "rank": 1588,
+   "rank": 1589,
    "code": "4556",
    "name": "旭然",
    "market": "上櫃",
@@ -22258,7 +22281,7 @@
    "employees": 111
   },
   {
-   "rank": 1589,
+   "rank": 1590,
    "code": "6144",
    "name": "得利影",
    "market": "上櫃",
@@ -22272,7 +22295,7 @@
    "employees": 58
   },
   {
-   "rank": 1590,
+   "rank": 1591,
    "code": "8929",
    "name": "富堡",
    "market": "上櫃",
@@ -22286,7 +22309,7 @@
    "employees": 74
   },
   {
-   "rank": 1591,
+   "rank": 1592,
    "code": "2008",
    "name": "高興昌",
    "market": "上市",
@@ -22300,7 +22323,7 @@
    "employees": 198
   },
   {
-   "rank": 1592,
+   "rank": 1593,
    "code": "3567",
    "name": "逸昌",
    "market": "上櫃",
@@ -22314,7 +22337,7 @@
    "employees": 127
   },
   {
-   "rank": 1593,
+   "rank": 1594,
    "code": "4171",
    "name": "瑞基",
    "market": "上櫃",
@@ -22328,7 +22351,7 @@
    "employees": 130
   },
   {
-   "rank": 1594,
+   "rank": 1595,
    "code": "6588",
    "name": "東典光電",
    "market": "上櫃",
@@ -22342,7 +22365,7 @@
    "employees": 77
   },
   {
-   "rank": 1595,
+   "rank": 1596,
    "code": "1464",
    "name": "得力",
    "market": "上市",
@@ -22356,7 +22379,7 @@
    "employees": 654
   },
   {
-   "rank": 1596,
+   "rank": 1597,
    "code": "3362",
    "name": "先進光",
    "market": "上櫃",
@@ -22370,7 +22393,7 @@
    "employees": 765
   },
   {
-   "rank": 1597,
+   "rank": 1598,
    "code": "4558",
    "name": "寶緯",
    "market": "上櫃",
@@ -22384,7 +22407,7 @@
    "employees": 323
   },
   {
-   "rank": 1598,
+   "rank": 1599,
    "code": "8182",
    "name": "加高",
    "market": "上櫃",
@@ -22398,7 +22421,7 @@
    "employees": 287
   },
   {
-   "rank": 1599,
+   "rank": 1600,
    "code": "1432",
    "name": "大魯閣",
    "market": "上市",
@@ -22412,7 +22435,7 @@
    "employees": 313
   },
   {
-   "rank": 1600,
+   "rank": 1601,
    "code": "1470",
    "name": "大統新創",
    "market": "上市",
@@ -22426,7 +22449,7 @@
    "employees": 228
   },
   {
-   "rank": 1601,
+   "rank": 1602,
    "code": "6155",
    "name": "鈞寶",
    "market": "上市",
@@ -22440,7 +22463,7 @@
    "employees": 192
   },
   {
-   "rank": 1602,
+   "rank": 1603,
    "code": "2230",
    "name": "泰茂",
    "market": "上櫃",
@@ -22454,7 +22477,7 @@
    "employees": 94
   },
   {
-   "rank": 1603,
+   "rank": 1604,
    "code": "3523",
    "name": "迎輝",
    "market": "上櫃",
@@ -22468,7 +22491,7 @@
    "employees": 60
   },
   {
-   "rank": 1604,
+   "rank": 1605,
    "code": "4513",
    "name": "福裕",
    "market": "上櫃",
@@ -22482,7 +22505,7 @@
    "employees": 153
   },
   {
-   "rank": 1605,
+   "rank": 1606,
    "code": "4931",
    "name": "新盛力",
    "market": "上櫃",
@@ -22496,7 +22519,7 @@
    "employees": 339
   },
   {
-   "rank": 1606,
+   "rank": 1607,
    "code": "6242",
    "name": "立康",
    "market": "上櫃",
@@ -22510,7 +22533,7 @@
    "employees": 132
   },
   {
-   "rank": 1607,
+   "rank": 1608,
    "code": "6593",
    "name": "台灣銘板",
    "market": "上櫃",
@@ -22524,7 +22547,7 @@
    "employees": 202
   },
   {
-   "rank": 1608,
+   "rank": 1609,
    "code": "2701",
    "name": "萬企",
    "market": "上市",
@@ -22538,7 +22561,7 @@
    "employees": 18
   },
   {
-   "rank": 1609,
+   "rank": 1610,
    "code": "3325",
    "name": "旭品",
    "market": "上櫃",
@@ -22552,7 +22575,7 @@
    "employees": 28
   },
   {
-   "rank": 1610,
+   "rank": 1611,
    "code": "9962",
    "name": "有益",
    "market": "上櫃",
@@ -22566,7 +22589,7 @@
    "employees": 84
   },
   {
-   "rank": 1611,
+   "rank": 1612,
    "code": "3297",
    "name": "杭特",
    "market": "上櫃",
@@ -22580,7 +22603,7 @@
    "employees": 138
   },
   {
-   "rank": 1612,
+   "rank": 1613,
    "code": "3321",
    "name": "同泰",
    "market": "上市",
@@ -22594,7 +22617,7 @@
    "employees": 441
   },
   {
-   "rank": 1613,
+   "rank": 1614,
    "code": "2069",
    "name": "運錩",
    "market": "上市",
@@ -22608,7 +22631,7 @@
    "employees": 162
   },
   {
-   "rank": 1614,
+   "rank": 1615,
    "code": "6504",
    "name": "南六",
    "market": "上市",
@@ -22622,7 +22645,7 @@
    "employees": 217
   },
   {
-   "rank": 1615,
+   "rank": 1616,
    "code": "5703",
    "name": "亞都麗緻",
    "market": "上櫃",
@@ -22636,7 +22659,7 @@
    "employees": 239
   },
   {
-   "rank": 1616,
+   "rank": 1617,
    "code": "2033",
    "name": "佳大",
    "market": "上市",
@@ -22650,7 +22673,7 @@
    "employees": 96
   },
   {
-   "rank": 1617,
+   "rank": 1618,
    "code": "6167",
    "name": "久正",
    "market": "上櫃",
@@ -22664,7 +22687,7 @@
    "employees": 198
   },
   {
-   "rank": 1618,
+   "rank": 1619,
    "code": "6642",
    "name": "富致",
    "market": "上櫃",
@@ -22678,7 +22701,7 @@
    "employees": 119
   },
   {
-   "rank": 1619,
+   "rank": 1620,
    "code": "1599",
    "name": "宏佳騰",
    "market": "上櫃",
@@ -22692,7 +22715,7 @@
    "employees": 377
   },
   {
-   "rank": 1620,
+   "rank": 1621,
    "code": "2732",
    "name": "六角",
    "market": "上櫃",
@@ -22706,7 +22729,7 @@
    "employees": 191
   },
   {
-   "rank": 1621,
+   "rank": 1622,
    "code": "4714",
    "name": "永捷",
    "market": "上櫃",
@@ -22720,7 +22743,7 @@
    "employees": 53
   },
   {
-   "rank": 1622,
+   "rank": 1623,
    "code": "5014",
    "name": "建錩",
    "market": "上櫃",
@@ -22734,7 +22757,7 @@
    "employees": 52
   },
   {
-   "rank": 1623,
+   "rank": 1624,
    "code": "6899",
    "name": "創為精密",
    "market": "上櫃",
@@ -22748,7 +22771,7 @@
    "employees": 284
   },
   {
-   "rank": 1624,
+   "rank": 1625,
    "code": "8084",
    "name": "巨虹",
    "market": "上櫃",
@@ -22762,7 +22785,7 @@
    "employees": 26
   },
   {
-   "rank": 1625,
+   "rank": 1626,
    "code": "3044",
    "name": "健鼎",
    "market": "上市",
@@ -22776,7 +22799,7 @@
    "employees": 968
   },
   {
-   "rank": 1626,
+   "rank": 1627,
    "code": "4419",
    "name": "皇家美食",
    "market": "上櫃",
@@ -22790,7 +22813,7 @@
    "employees": 10
   },
   {
-   "rank": 1627,
+   "rank": 1628,
    "code": "4806",
    "name": "桂田文創",
    "market": "上櫃",
@@ -22804,7 +22827,7 @@
    "employees": 54
   },
   {
-   "rank": 1628,
+   "rank": 1629,
    "code": "5488",
    "name": "松普",
    "market": "上櫃",
@@ -22818,7 +22841,7 @@
    "employees": 62
   },
   {
-   "rank": 1629,
+   "rank": 1630,
    "code": "4562",
    "name": "穎漢",
    "market": "上市",
@@ -22832,7 +22855,7 @@
    "employees": 261
   },
   {
-   "rank": 1630,
+   "rank": 1631,
    "code": "3128",
    "name": "昇銳",
    "market": "上櫃",
@@ -22846,7 +22869,7 @@
    "employees": 316
   },
   {
-   "rank": 1631,
+   "rank": 1632,
    "code": "6441",
    "name": "廣錠",
    "market": "上櫃",
@@ -22860,7 +22883,7 @@
    "employees": 95
   },
   {
-   "rank": 1632,
+   "rank": 1633,
    "code": "6904",
    "name": "伯鑫",
    "market": "上櫃",
@@ -22874,7 +22897,7 @@
    "employees": 133
   },
   {
-   "rank": 1633,
+   "rank": 1634,
    "code": "9949",
    "name": "琉園",
    "market": "上櫃",
@@ -22888,7 +22911,7 @@
    "employees": 65
   },
   {
-   "rank": 1634,
+   "rank": 1635,
    "code": "8927",
    "name": "北基",
    "market": "上櫃",
@@ -22902,7 +22925,7 @@
    "employees": 537
   },
   {
-   "rank": 1635,
+   "rank": 1636,
    "code": "4413",
    "name": "飛寶企業",
    "market": "上櫃",
@@ -22916,7 +22939,7 @@
    "employees": 62
   },
   {
-   "rank": 1636,
+   "rank": 1637,
    "code": "5864",
    "name": "致和證",
    "market": "上櫃",
@@ -22930,7 +22953,7 @@
    "employees": 166
   },
   {
-   "rank": 1637,
+   "rank": 1638,
    "code": "3311",
    "name": "閎暉",
    "market": "上市",
@@ -22944,7 +22967,7 @@
    "employees": 407
   },
   {
-   "rank": 1638,
+   "rank": 1639,
    "code": "6834",
    "name": "天二科技",
    "market": "上市",
@@ -22958,7 +22981,7 @@
    "employees": 398
   },
   {
-   "rank": 1639,
+   "rank": 1640,
    "code": "9935",
    "name": "慶豐富",
    "market": "上市",
@@ -22972,7 +22995,7 @@
    "employees": 466
   },
   {
-   "rank": 1640,
+   "rank": 1641,
    "code": "7723",
    "name": "築間",
    "market": "上櫃",
@@ -22986,7 +23009,7 @@
    "employees": 1654
   },
   {
-   "rank": 1641,
+   "rank": 1642,
    "code": "8354",
    "name": "冠好",
    "market": "上櫃",
@@ -23000,7 +23023,7 @@
    "employees": 156
   },
   {
-   "rank": 1642,
+   "rank": 1643,
    "code": "8489",
    "name": "三貝德",
    "market": "上櫃",
@@ -23014,7 +23037,7 @@
    "employees": 87
   },
   {
-   "rank": 1643,
+   "rank": 1644,
    "code": "1540",
    "name": "喬福",
    "market": "上市",
@@ -23028,7 +23051,7 @@
    "employees": 85
   },
   {
-   "rank": 1644,
+   "rank": 1645,
    "code": "2734",
    "name": "易飛網",
    "market": "上櫃",
@@ -23042,7 +23065,7 @@
    "employees": 177
   },
   {
-   "rank": 1645,
+   "rank": 1646,
    "code": "7767",
    "name": "仁大資訊",
    "market": "上櫃",
@@ -23056,7 +23079,7 @@
    "employees": 422
   },
   {
-   "rank": 1646,
+   "rank": 1647,
    "code": "2061",
    "name": "風青",
    "market": "上櫃",
@@ -23070,7 +23093,7 @@
    "employees": 2
   },
   {
-   "rank": 1647,
+   "rank": 1648,
    "code": "2063",
    "name": "世鎧精密",
    "market": "上櫃",
@@ -23084,7 +23107,7 @@
    "employees": 271
   },
   {
-   "rank": 1648,
+   "rank": 1649,
    "code": "3221",
    "name": "台嘉碩",
    "market": "上櫃",
@@ -23098,7 +23121,7 @@
    "employees": 416
   },
   {
-   "rank": 1649,
+   "rank": 1650,
    "code": "8171",
    "name": "天宇",
    "market": "上櫃",
@@ -23112,7 +23135,7 @@
    "employees": 86
   },
   {
-   "rank": 1650,
+   "rank": 1651,
    "code": "1533",
    "name": "車王電",
    "market": "上市",
@@ -23126,7 +23149,7 @@
    "employees": 370
   },
   {
-   "rank": 1651,
+   "rank": 1652,
    "code": "2705",
    "name": "六福",
    "market": "上市",
@@ -23140,7 +23163,7 @@
    "employees": 697
   },
   {
-   "rank": 1652,
+   "rank": 1653,
    "code": "6118",
    "name": "建達",
    "market": "上櫃",
@@ -23154,7 +23177,7 @@
    "employees": 240
   },
   {
-   "rank": 1653,
+   "rank": 1654,
    "code": "8107",
    "name": "大億金茂",
    "market": "上櫃",
@@ -23168,7 +23191,7 @@
    "employees": 90
   },
   {
-   "rank": 1654,
+   "rank": 1655,
    "code": "3178",
    "name": "公準",
    "market": "上櫃",
@@ -23182,7 +23205,7 @@
    "employees": 688
   },
   {
-   "rank": 1655,
+   "rank": 1656,
    "code": "5015",
    "name": "華祺",
    "market": "上櫃",
@@ -23196,7 +23219,7 @@
    "employees": 160
   },
   {
-   "rank": 1656,
+   "rank": 1657,
    "code": "6612",
    "name": "奈米醫材",
    "market": "上櫃",
@@ -23210,7 +23233,7 @@
    "employees": 115
   },
   {
-   "rank": 1657,
+   "rank": 1658,
    "code": "3390",
    "name": "旭軟",
    "market": "上櫃",
@@ -23224,7 +23247,7 @@
    "employees": 294
   },
   {
-   "rank": 1658,
+   "rank": 1659,
    "code": "2316",
    "name": "楠梓電",
    "market": "上市",
@@ -23238,7 +23261,7 @@
    "employees": 1102
   },
   {
-   "rank": 1659,
+   "rank": 1660,
    "code": "6730",
    "name": "常廣",
    "market": "上櫃",
@@ -23252,7 +23275,7 @@
    "employees": 198
   },
   {
-   "rank": 1660,
+   "rank": 1661,
    "code": "8935",
    "name": "邦泰",
    "market": "上櫃",
@@ -23266,7 +23289,7 @@
    "employees": 74
   },
   {
-   "rank": 1661,
+   "rank": 1662,
    "code": "2062",
    "name": "橋椿",
    "market": "上市",
@@ -23280,7 +23303,7 @@
    "employees": 802
   },
   {
-   "rank": 1662,
+   "rank": 1663,
    "code": "6698",
    "name": "旭暉應材",
    "market": "上市",
@@ -23294,7 +23317,7 @@
    "employees": 166
   },
   {
-   "rank": 1663,
+   "rank": 1664,
    "code": "8932",
    "name": "智通*",
    "market": "上櫃",
@@ -23308,7 +23331,7 @@
    "employees": 138
   },
   {
-   "rank": 1664,
+   "rank": 1665,
    "code": "8072",
    "name": "陞泰",
    "market": "上市",
@@ -23322,7 +23345,7 @@
    "employees": 9
   },
   {
-   "rank": 1665,
+   "rank": 1666,
    "code": "1586",
    "name": "和勤",
    "market": "上櫃",
@@ -23336,7 +23359,7 @@
    "employees": 206
   },
   {
-   "rank": 1666,
+   "rank": 1667,
    "code": "6417",
    "name": "韋僑",
    "market": "上櫃",
@@ -23350,7 +23373,7 @@
    "employees": 400
   },
   {
-   "rank": 1667,
+   "rank": 1668,
    "code": "1460",
    "name": "宏遠",
    "market": "上市",
@@ -23364,7 +23387,7 @@
    "employees": 1388
   },
   {
-   "rank": 1668,
+   "rank": 1669,
    "code": "9924",
    "name": "福興",
    "market": "上市",
@@ -23378,7 +23401,7 @@
    "employees": 1082
   },
   {
-   "rank": 1669,
+   "rank": 1670,
    "code": "3713",
    "name": "新晶投控",
    "market": "上櫃",
@@ -23392,7 +23415,7 @@
    "employees": 49
   },
   {
-   "rank": 1670,
+   "rank": 1671,
    "code": "2413",
    "name": "環科",
    "market": "上市",
@@ -23406,7 +23429,7 @@
    "employees": 549
   },
   {
-   "rank": 1671,
+   "rank": 1672,
    "code": "4976",
    "name": "佳凌",
    "market": "上市",
@@ -23420,7 +23443,7 @@
    "employees": 545
   },
   {
-   "rank": 1672,
+   "rank": 1673,
    "code": "6275",
    "name": "元山",
    "market": "上櫃",
@@ -23434,7 +23457,7 @@
    "employees": 484
   },
   {
-   "rank": 1673,
+   "rank": 1674,
    "code": "6508",
    "name": "惠光",
    "market": "上櫃",
@@ -23448,7 +23471,7 @@
    "employees": 124
   },
   {
-   "rank": 1674,
+   "rank": 1675,
    "code": "1434",
    "name": "福懋",
    "market": "上市",
@@ -23462,7 +23485,7 @@
    "employees": 2545
   },
   {
-   "rank": 1675,
+   "rank": 1676,
    "code": "2109",
    "name": "華豐",
    "market": "上市",
@@ -23476,7 +23499,7 @@
    "employees": 477
   },
   {
-   "rank": 1676,
+   "rank": 1677,
    "code": "2911",
    "name": "麗嬰房",
    "market": "上市",
@@ -23490,7 +23513,7 @@
    "employees": 470
   },
   {
-   "rank": 1677,
+   "rank": 1678,
    "code": "1437",
    "name": "勤益控",
    "market": "上市",
@@ -23504,7 +23527,7 @@
    "employees": 22
   },
   {
-   "rank": 1678,
+   "rank": 1679,
    "code": "8162",
    "name": "微矽電子-創",
    "market": "上市",
@@ -23518,7 +23541,7 @@
    "employees": 577
   },
   {
-   "rank": 1679,
+   "rank": 1680,
    "code": "4979",
    "name": "華星光",
    "market": "上櫃",
@@ -23532,7 +23555,7 @@
    "employees": 478
   },
   {
-   "rank": 1680,
+   "rank": 1681,
    "code": "6968",
    "name": "萬達寵物",
    "market": "上櫃",
@@ -23546,7 +23569,7 @@
    "employees": 672
   },
   {
-   "rank": 1681,
+   "rank": 1682,
    "code": "8928",
    "name": "鉅明",
    "market": "上櫃",
@@ -23560,7 +23583,7 @@
    "employees": 1104
   },
   {
-   "rank": 1682,
+   "rank": 1683,
    "code": "3548",
    "name": "兆利",
    "market": "上櫃",
@@ -23574,7 +23597,7 @@
    "employees": 620
   },
   {
-   "rank": 1683,
+   "rank": 1684,
    "code": "4127",
    "name": "天良",
    "market": "上櫃",
@@ -23588,7 +23611,7 @@
    "employees": 55
   },
   {
-   "rank": 1684,
+   "rank": 1685,
    "code": "4503",
    "name": "金雨",
    "market": "上櫃",
@@ -23602,7 +23625,7 @@
    "employees": 225
   },
   {
-   "rank": 1685,
+   "rank": 1686,
    "code": "3516",
    "name": "亞帝歐",
    "market": "上櫃",
@@ -23616,7 +23639,7 @@
    "employees": 65
   },
   {
-   "rank": 1686,
+   "rank": 1687,
    "code": "5011",
    "name": "久陽",
    "market": "上櫃",
@@ -23630,7 +23653,7 @@
    "employees": 39
   },
   {
-   "rank": 1687,
+   "rank": 1688,
    "code": "7743",
    "name": "金利食安",
    "market": "上櫃",
@@ -23644,7 +23667,7 @@
    "employees": 117
   },
   {
-   "rank": 1688,
+   "rank": 1689,
    "code": "1339",
    "name": "昭輝",
    "market": "上市",
@@ -23658,7 +23681,7 @@
    "employees": 255
   },
   {
-   "rank": 1689,
+   "rank": 1690,
    "code": "1454",
    "name": "台富",
    "market": "上市",
@@ -23672,7 +23695,7 @@
    "employees": 369
   },
   {
-   "rank": 1690,
+   "rank": 1691,
    "code": "4737",
    "name": "華廣",
    "market": "上市",
@@ -23686,7 +23709,7 @@
    "employees": 943
   },
   {
-   "rank": 1691,
+   "rank": 1692,
    "code": "2066",
    "name": "世德",
    "market": "上櫃",
@@ -23700,7 +23723,7 @@
    "employees": 230
   },
   {
-   "rank": 1692,
+   "rank": 1693,
    "code": "1541",
    "name": "錩泰",
    "market": "上市",
@@ -23714,7 +23737,7 @@
    "employees": 362
   },
   {
-   "rank": 1693,
+   "rank": 1694,
    "code": "4530",
    "name": "宏易",
    "market": "上櫃",
@@ -23728,7 +23751,7 @@
    "employees": 32
   },
   {
-   "rank": 1694,
+   "rank": 1695,
    "code": "4716",
    "name": "大立",
    "market": "上櫃",
@@ -23742,7 +23765,7 @@
    "employees": 78
   },
   {
-   "rank": 1695,
+   "rank": 1696,
    "code": "6929",
    "name": "佑全",
    "market": "上櫃",
@@ -23756,7 +23779,7 @@
    "employees": 815
   },
   {
-   "rank": 1696,
+   "rank": 1697,
    "code": "6142",
    "name": "友勁",
    "market": "上市",
@@ -23770,7 +23793,7 @@
    "employees": 455
   },
   {
-   "rank": 1697,
+   "rank": 1698,
    "code": "1813",
    "name": "寶利徠",
    "market": "上櫃",
@@ -23784,7 +23807,7 @@
    "employees": 80
   },
   {
-   "rank": 1698,
+   "rank": 1699,
    "code": "1732",
    "name": "毛寶",
    "market": "上市",
@@ -23798,7 +23821,7 @@
    "employees": 134
   },
   {
-   "rank": 1699,
+   "rank": 1700,
    "code": "2438",
    "name": "翔耀",
    "market": "上市",
@@ -23812,7 +23835,7 @@
    "employees": 38
   },
   {
-   "rank": 1700,
+   "rank": 1701,
    "code": "3236",
    "name": "千如",
    "market": "上櫃",
@@ -23826,7 +23849,7 @@
    "employees": 175
   },
   {
-   "rank": 1701,
+   "rank": 1702,
    "code": "8067",
    "name": "志旭",
    "market": "上櫃",
@@ -23840,7 +23863,7 @@
    "employees": 20
   },
   {
-   "rank": 1702,
+   "rank": 1703,
    "code": "4572",
    "name": "駐龍",
    "market": "上市",
@@ -23854,7 +23877,7 @@
    "employees": 267
   },
   {
-   "rank": 1703,
+   "rank": 1704,
    "code": "5516",
    "name": "雙喜",
    "market": "上櫃",
@@ -23868,7 +23891,7 @@
    "employees": 300
   },
   {
-   "rank": 1704,
+   "rank": 1705,
    "code": "2466",
    "name": "冠西電",
    "market": "上市",
@@ -23882,7 +23905,7 @@
    "employees": 58
   },
   {
-   "rank": 1705,
+   "rank": 1706,
    "code": "1570",
    "name": "力肯",
    "market": "上櫃",
@@ -23896,7 +23919,7 @@
    "employees": 114
   },
   {
-   "rank": 1706,
+   "rank": 1707,
    "code": "1593",
    "name": "祺驊",
    "market": "上櫃",
@@ -23910,7 +23933,7 @@
    "employees": 81
   },
   {
-   "rank": 1707,
+   "rank": 1708,
    "code": "3339",
    "name": "泰谷",
    "market": "上櫃",
@@ -23924,7 +23947,7 @@
    "employees": 149
   },
   {
-   "rank": 1708,
+   "rank": 1709,
    "code": "4402",
    "name": "郡都開發",
    "market": "上櫃",
@@ -23938,7 +23961,7 @@
    "employees": 9
   },
   {
-   "rank": 1709,
+   "rank": 1710,
    "code": "4538",
    "name": "大詠城",
    "market": "上櫃",
@@ -23952,7 +23975,7 @@
    "employees": 94
   },
   {
-   "rank": 1710,
+   "rank": 1711,
    "code": "7788",
    "name": "松川精密",
    "market": "上市",
@@ -23966,7 +23989,7 @@
    "employees": 826
   },
   {
-   "rank": 1711,
+   "rank": 1712,
    "code": "9942",
    "name": "茂順",
    "market": "上市",
@@ -23980,7 +24003,7 @@
    "employees": 876
   },
   {
-   "rank": 1712,
+   "rank": 1713,
    "code": "2916",
    "name": "滿心",
    "market": "上櫃",
@@ -23994,7 +24017,7 @@
    "employees": 637
   },
   {
-   "rank": 1713,
+   "rank": 1714,
    "code": "4534",
    "name": "慶騰",
    "market": "上櫃",
@@ -24008,7 +24031,7 @@
    "employees": 137
   },
   {
-   "rank": 1714,
+   "rank": 1715,
    "code": "6578",
    "name": "達邦蛋白",
    "market": "上櫃",
@@ -24022,7 +24045,7 @@
    "employees": 40
   },
   {
-   "rank": 1715,
+   "rank": 1716,
    "code": "6584",
    "name": "南俊國際",
    "market": "上櫃",
@@ -24036,7 +24059,7 @@
    "employees": 549
   },
   {
-   "rank": 1716,
+   "rank": 1717,
    "code": "6823",
    "name": "濾能",
    "market": "上櫃",
@@ -24050,7 +24073,7 @@
    "employees": 166
   },
   {
-   "rank": 1717,
+   "rank": 1718,
    "code": "1526",
    "name": "日馳",
    "market": "上市",
@@ -24064,7 +24087,7 @@
    "employees": 139
   },
   {
-   "rank": 1718,
+   "rank": 1719,
    "code": "3631",
    "name": "晟楠",
    "market": "上櫃",
@@ -24078,7 +24101,7 @@
    "employees": 2
   },
   {
-   "rank": 1719,
+   "rank": 1720,
    "code": "2017",
    "name": "官田鋼",
    "market": "上市",
@@ -24092,7 +24115,7 @@
    "employees": 251
   },
   {
-   "rank": 1720,
+   "rank": 1721,
    "code": "6443",
    "name": "元晶",
    "market": "上市",
@@ -24106,7 +24129,7 @@
    "employees": 910
   },
   {
-   "rank": 1721,
+   "rank": 1722,
    "code": "2235",
    "name": "謚源",
    "market": "上櫃",
@@ -24120,7 +24143,7 @@
    "employees": 184
   },
   {
-   "rank": 1722,
+   "rank": 1723,
    "code": "1449",
    "name": "佳和",
    "market": "上市",
@@ -24134,7 +24157,7 @@
    "employees": 810
   },
   {
-   "rank": 1723,
+   "rank": 1724,
    "code": "4426",
    "name": "利勤",
    "market": "上市",
@@ -24148,7 +24171,7 @@
    "employees": 505
   },
   {
-   "rank": 1724,
+   "rank": 1725,
    "code": "3499",
    "name": "環天科",
    "market": "上櫃",
@@ -24162,7 +24185,7 @@
    "employees": 121
   },
   {
-   "rank": 1725,
+   "rank": 1726,
    "code": "1324",
    "name": "地球",
    "market": "上市",
@@ -24176,7 +24199,7 @@
    "employees": 207
   },
   {
-   "rank": 1726,
+   "rank": 1727,
    "code": "1452",
    "name": "宏益",
    "market": "上市",
@@ -24190,7 +24213,7 @@
    "employees": 217
   },
   {
-   "rank": 1727,
+   "rank": 1728,
    "code": "5475",
    "name": "德宏",
    "market": "上櫃",
@@ -24204,7 +24227,7 @@
    "employees": 18
   },
   {
-   "rank": 1728,
+   "rank": 1729,
    "code": "5285",
    "name": "界霖",
    "market": "上市",
@@ -24218,7 +24241,7 @@
    "employees": 253
   },
   {
-   "rank": 1729,
+   "rank": 1730,
    "code": "3066",
    "name": "李洲",
    "market": "上櫃",
@@ -24232,7 +24255,7 @@
    "employees": 29
   },
   {
-   "rank": 1730,
+   "rank": 1731,
    "code": "3597",
    "name": "映興",
    "market": "上櫃",
@@ -24246,7 +24269,7 @@
    "employees": 130
   },
   {
-   "rank": 1731,
+   "rank": 1732,
    "code": "6517",
    "name": "保勝光學",
    "market": "上櫃",
@@ -24260,7 +24283,7 @@
    "employees": 205
   },
   {
-   "rank": 1732,
+   "rank": 1733,
    "code": "8088",
    "name": "品安",
    "market": "上櫃",
@@ -24274,7 +24297,7 @@
    "employees": 294
   },
   {
-   "rank": 1733,
+   "rank": 1734,
    "code": "1598",
    "name": "岱宇",
    "market": "上市",
@@ -24288,7 +24311,7 @@
    "employees": 580
   },
   {
-   "rank": 1734,
+   "rank": 1735,
    "code": "9945",
    "name": "潤泰新",
    "market": "上市",
@@ -24302,7 +24325,7 @@
    "employees": 209
   },
   {
-   "rank": 1735,
+   "rank": 1736,
    "code": "4909",
    "name": "新復興",
    "market": "上櫃",
@@ -24316,7 +24339,7 @@
    "employees": 180
   },
   {
-   "rank": 1736,
+   "rank": 1737,
    "code": "6154",
    "name": "順發",
    "market": "上櫃",
@@ -24330,7 +24353,7 @@
    "employees": 488
   },
   {
-   "rank": 1737,
+   "rank": 1738,
    "code": "8092",
    "name": "建暐",
    "market": "上櫃",
@@ -24344,7 +24367,7 @@
    "employees": 163
   },
   {
-   "rank": 1738,
+   "rank": 1739,
    "code": "8450",
    "name": "霹靂",
    "market": "上櫃",
@@ -24358,7 +24381,7 @@
    "employees": 163
   },
   {
-   "rank": 1739,
+   "rank": 1740,
    "code": "4303",
    "name": "信立",
    "market": "上櫃",
@@ -24372,7 +24395,7 @@
    "employees": 47
   },
   {
-   "rank": 1740,
+   "rank": 1741,
    "code": "2719",
    "name": "燦星旅",
    "market": "上櫃",
@@ -24386,7 +24409,7 @@
    "employees": 93
   },
   {
-   "rank": 1741,
+   "rank": 1742,
    "code": "4555",
    "name": "氣立",
    "market": "上市",
@@ -24400,7 +24423,7 @@
    "employees": 155
   },
   {
-   "rank": 1742,
+   "rank": 1743,
    "code": "5228",
    "name": "鈺鎧",
    "market": "上櫃",
@@ -24414,7 +24437,7 @@
    "employees": 237
   },
   {
-   "rank": 1743,
+   "rank": 1744,
    "code": "8342",
    "name": "益張",
    "market": "上櫃",
@@ -24428,7 +24451,7 @@
    "employees": 254
   },
   {
-   "rank": 1744,
+   "rank": 1745,
    "code": "4304",
    "name": "勝昱",
    "market": "上櫃",
@@ -24442,7 +24465,7 @@
    "employees": 53
   },
   {
-   "rank": 1745,
+   "rank": 1746,
    "code": "4109",
    "name": "加捷生醫",
    "market": "上櫃",
@@ -24456,7 +24479,7 @@
    "employees": 56
   },
   {
-   "rank": 1746,
+   "rank": 1747,
    "code": "4744",
    "name": "皇將",
    "market": "上櫃",
@@ -24470,7 +24493,7 @@
    "employees": 164
   },
   {
-   "rank": 1747,
+   "rank": 1748,
    "code": "1587",
    "name": "吉茂",
    "market": "上市",
@@ -24484,7 +24507,7 @@
    "employees": 180
   },
   {
-   "rank": 1748,
+   "rank": 1749,
    "code": "2434",
    "name": "統懋",
    "market": "上市",
@@ -24498,7 +24521,7 @@
    "employees": 26
   },
   {
-   "rank": 1749,
+   "rank": 1750,
    "code": "6552",
    "name": "易華電",
    "market": "上市",
@@ -24512,7 +24535,7 @@
    "employees": 526
   },
   {
-   "rank": 1750,
+   "rank": 1751,
    "code": "4760",
    "name": "勤凱科技",
    "market": "上櫃",
@@ -24526,7 +24549,7 @@
    "employees": 100
   },
   {
-   "rank": 1751,
+   "rank": 1752,
    "code": "1414",
    "name": "東和",
    "market": "上市",
@@ -24540,7 +24563,7 @@
    "employees": 128
   },
   {
-   "rank": 1752,
+   "rank": 1753,
    "code": "7705",
    "name": "三商餐飲",
    "market": "上市",
@@ -24554,7 +24577,7 @@
    "employees": 1236
   },
   {
-   "rank": 1753,
+   "rank": 1754,
    "code": "5481",
    "name": "新華",
    "market": "上櫃",
@@ -24568,7 +24591,7 @@
    "employees": 9
   },
   {
-   "rank": 1754,
+   "rank": 1755,
    "code": "6971",
    "name": "惠民實業",
    "market": "上櫃",
@@ -24582,7 +24605,7 @@
    "employees": 879
   },
   {
-   "rank": 1755,
+   "rank": 1756,
    "code": "6931",
    "name": "青松健康",
    "market": "上市",
@@ -24596,7 +24619,7 @@
    "employees": 431
   },
   {
-   "rank": 1756,
+   "rank": 1757,
    "code": "3207",
    "name": "耀勝",
    "market": "上櫃",
@@ -24610,7 +24633,7 @@
    "employees": 69
   },
   {
-   "rank": 1757,
+   "rank": 1758,
    "code": "2915",
    "name": "潤泰全",
    "market": "上市",
@@ -24624,7 +24647,7 @@
    "employees": 403
   },
   {
-   "rank": 1758,
+   "rank": 1759,
    "code": "6141",
    "name": "柏承",
    "market": "上市",
@@ -24638,7 +24661,7 @@
    "employees": 354
   },
   {
-   "rank": 1759,
+   "rank": 1760,
    "code": "1444",
    "name": "力麗",
    "market": "上市",
@@ -24652,7 +24675,7 @@
    "employees": 914
   },
   {
-   "rank": 1760,
+   "rank": 1761,
    "code": "4741",
    "name": "泓瀚",
    "market": "上櫃",
@@ -24666,7 +24689,7 @@
    "employees": 160
   },
   {
-   "rank": 1761,
+   "rank": 1762,
    "code": "3607",
    "name": "谷崧",
    "market": "上市",
@@ -24680,7 +24703,7 @@
    "employees": 42
   },
   {
-   "rank": 1762,
+   "rank": 1763,
    "code": "2483",
    "name": "百容",
    "market": "上市",
@@ -24694,7 +24717,7 @@
    "employees": 552
   },
   {
-   "rank": 1763,
+   "rank": 1764,
    "code": "5521",
    "name": "工信",
    "market": "上市",
@@ -24708,7 +24731,7 @@
    "employees": 803
   },
   {
-   "rank": 1764,
+   "rank": 1765,
    "code": "5220",
    "name": "萬達光電",
    "market": "上櫃",
@@ -24722,7 +24745,7 @@
    "employees": 266
   },
   {
-   "rank": 1765,
+   "rank": 1766,
    "code": "1506",
    "name": "正道",
    "market": "上市",
@@ -24736,7 +24759,7 @@
    "employees": 280
   },
   {
-   "rank": 1766,
+   "rank": 1767,
    "code": "1538",
    "name": "正峰",
    "market": "上市",
@@ -24750,7 +24773,7 @@
    "employees": 21
   },
   {
-   "rank": 1767,
+   "rank": 1768,
    "code": "2706",
    "name": "第一店",
    "market": "上市",
@@ -24764,7 +24787,7 @@
    "employees": 35
   },
   {
-   "rank": 1768,
+   "rank": 1769,
    "code": "2254",
    "name": "巨鎧精密-創",
    "market": "上市",
@@ -24778,7 +24801,7 @@
    "employees": 119
   },
   {
-   "rank": 1769,
+   "rank": 1770,
    "code": "6294",
    "name": "智基",
    "market": "上櫃",
@@ -24792,7 +24815,7 @@
    "employees": 357
   },
   {
-   "rank": 1770,
+   "rank": 1771,
    "code": "7782",
    "name": "光速火箭",
    "market": "上櫃",
@@ -24806,7 +24829,7 @@
    "employees": 63
   },
   {
-   "rank": 1771,
+   "rank": 1772,
    "code": "9937",
    "name": "全國",
    "market": "上市",
@@ -24820,7 +24843,7 @@
    "employees": 1144
   },
   {
-   "rank": 1772,
+   "rank": 1773,
    "code": "1465",
    "name": "偉全",
    "market": "上市",
@@ -24834,7 +24857,7 @@
    "employees": 143
   },
   {
-   "rank": 1773,
+   "rank": 1774,
    "code": "9960",
    "name": "邁達康",
    "market": "上櫃",
@@ -24848,7 +24871,7 @@
    "employees": 85
   },
   {
-   "rank": 1774,
+   "rank": 1775,
    "code": "8937",
    "name": "合騏",
    "market": "上櫃",
@@ -24862,7 +24885,7 @@
    "employees": 61
   },
   {
-   "rank": 1775,
+   "rank": 1776,
    "code": "1325",
    "name": "恆大",
    "market": "上市",
@@ -24876,7 +24899,7 @@
    "employees": 109
   },
   {
-   "rank": 1776,
+   "rank": 1777,
    "code": "2064",
    "name": "晉椿",
    "market": "上櫃",
@@ -24890,7 +24913,7 @@
    "employees": 176
   },
   {
-   "rank": 1777,
+   "rank": 1778,
    "code": "2941",
    "name": "米斯特",
    "market": "上櫃",
@@ -24904,7 +24927,7 @@
    "employees": 249
   },
   {
-   "rank": 1778,
+   "rank": 1779,
    "code": "5205",
    "name": "中茂",
    "market": "上櫃",
@@ -24918,7 +24941,7 @@
    "employees": 7
   },
   {
-   "rank": 1779,
+   "rank": 1780,
    "code": "7732",
    "name": "金興精密",
    "market": "上市",
@@ -24932,7 +24955,7 @@
    "employees": 200
   },
   {
-   "rank": 1780,
+   "rank": 1781,
    "code": "2067",
    "name": "嘉鋼",
    "market": "上櫃",
@@ -24946,7 +24969,7 @@
    "employees": 162
   },
   {
-   "rank": 1781,
+   "rank": 1782,
    "code": "5315",
    "name": "光聯",
    "market": "上櫃",
@@ -24960,7 +24983,7 @@
    "employees": 424
   },
   {
-   "rank": 1782,
+   "rank": 1783,
    "code": "2516",
    "name": "新建",
    "market": "上市",
@@ -24974,7 +24997,7 @@
    "employees": 910
   },
   {
-   "rank": 1783,
+   "rank": 1784,
    "code": "6128",
    "name": "上福",
    "market": "上市",
@@ -24988,7 +25011,7 @@
    "employees": 455
   },
   {
-   "rank": 1784,
+   "rank": 1785,
    "code": "8085",
    "name": "福華",
    "market": "上櫃",
@@ -25002,7 +25025,7 @@
    "employees": 207
   },
   {
-   "rank": 1785,
+   "rank": 1786,
    "code": "1529",
    "name": "樂事綠能",
    "market": "上市",
@@ -25016,7 +25039,7 @@
    "employees": 76
   },
   {
-   "rank": 1786,
+   "rank": 1787,
    "code": "9950",
    "name": "萬國通",
    "market": "上櫃",
@@ -25030,7 +25053,21 @@
    "employees": 610
   },
   {
-   "rank": 1787,
+   "rank": 1788,
+   "code": "1236",
+   "name": "宏亞",
+   "market": "上市",
+   "medianNonMgr": 45.4,
+   "medianChangePct": -4.02,
+   "avgNonMgr": 52.2,
+   "avgChangePct": -1.88,
+   "avgSalary": 51.2,
+   "avgBenefit": 63.9,
+   "industry": null,
+   "employees": null
+  },
+  {
+   "rank": 1789,
    "code": "3252",
    "name": "海灣",
    "market": "上櫃",
@@ -25044,7 +25081,7 @@
    "employees": 7
   },
   {
-   "rank": 1788,
+   "rank": 1790,
    "code": "3494",
    "name": "誠研",
    "market": "上市",
@@ -25058,7 +25095,7 @@
    "employees": 194
   },
   {
-   "rank": 1789,
+   "rank": 1791,
    "code": "3313",
    "name": "斐成",
    "market": "上櫃",
@@ -25072,7 +25109,7 @@
    "employees": 3
   },
   {
-   "rank": 1790,
+   "rank": 1792,
    "code": "2485",
    "name": "兆赫",
    "market": "上市",
@@ -25086,7 +25123,7 @@
    "employees": 877
   },
   {
-   "rank": 1791,
+   "rank": 1793,
    "code": "7736",
    "name": "虎山",
    "market": "上市",
@@ -25100,7 +25137,7 @@
    "employees": 270
   },
   {
-   "rank": 1792,
+   "rank": 1794,
    "code": "5704",
    "name": "老爺知",
    "market": "上櫃",
@@ -25114,7 +25151,7 @@
    "employees": 148
   },
   {
-   "rank": 1793,
+   "rank": 1795,
    "code": "4430",
    "name": "耀億",
    "market": "上櫃",
@@ -25128,7 +25165,7 @@
    "employees": 276
   },
   {
-   "rank": 1794,
+   "rank": 1796,
    "code": "5355",
    "name": "佳總",
    "market": "上櫃",
@@ -25142,7 +25179,7 @@
    "employees": 275
   },
   {
-   "rank": 1795,
+   "rank": 1797,
    "code": "4543",
    "name": "萬在",
    "market": "上櫃",
@@ -25156,7 +25193,7 @@
    "employees": 268
   },
   {
-   "rank": 1796,
+   "rank": 1798,
    "code": "2702",
    "name": "華園",
    "market": "上市",
@@ -25170,7 +25207,7 @@
    "employees": 36
   },
   {
-   "rank": 1797,
+   "rank": 1799,
    "code": "4406",
    "name": "新昕纖",
    "market": "上櫃",
@@ -25184,7 +25221,7 @@
    "employees": 109
   },
   {
-   "rank": 1798,
+   "rank": 1800,
    "code": "2947",
    "name": "振宇五金",
    "market": "上櫃",
@@ -25198,7 +25235,7 @@
    "employees": 718
   },
   {
-   "rank": 1799,
+   "rank": 1801,
    "code": "2945",
    "name": "三商家購",
    "market": "上市",
@@ -25212,7 +25249,7 @@
    "employees": 1953
   },
   {
-   "rank": 1800,
+   "rank": 1802,
    "code": "3043",
    "name": "科風",
    "market": "上市",
@@ -25226,7 +25263,7 @@
    "employees": 181
   },
   {
-   "rank": 1801,
+   "rank": 1803,
    "code": "5464",
    "name": "霖宏",
    "market": "上櫃",
@@ -25240,7 +25277,7 @@
    "employees": 311
   },
   {
-   "rank": 1802,
+   "rank": 1804,
    "code": "2712",
    "name": "遠雄來",
    "market": "上市",
@@ -25254,7 +25291,7 @@
    "employees": 300
   },
   {
-   "rank": 1803,
+   "rank": 1805,
    "code": "4502",
    "name": "健信",
    "market": "上櫃",
@@ -25268,7 +25305,7 @@
    "employees": 153
   },
   {
-   "rank": 1804,
+   "rank": 1806,
    "code": "8906",
    "name": "花王",
    "market": "上櫃",
@@ -25282,7 +25319,7 @@
    "employees": 69
   },
   {
-   "rank": 1805,
+   "rank": 1807,
    "code": "3226",
    "name": "龍鋒",
    "market": "上櫃",
@@ -25296,7 +25333,7 @@
    "employees": 170
   },
   {
-   "rank": 1806,
+   "rank": 1808,
    "code": "2444",
    "name": "兆勁",
    "market": "上市",
@@ -25310,7 +25347,7 @@
    "employees": 398
   },
   {
-   "rank": 1807,
+   "rank": 1809,
    "code": "1517",
    "name": "利奇",
    "market": "上市",
@@ -25324,7 +25361,7 @@
    "employees": 545
   },
   {
-   "rank": 1808,
+   "rank": 1810,
    "code": "8038",
    "name": "長園科",
    "market": "上櫃",
@@ -25338,7 +25375,7 @@
    "employees": 30
   },
   {
-   "rank": 1809,
+   "rank": 1811,
    "code": "6804",
    "name": "明係",
    "market": "上櫃",
@@ -25352,7 +25389,7 @@
    "employees": 155
   },
   {
-   "rank": 1810,
+   "rank": 1812,
    "code": "5701",
    "name": "劍湖山",
    "market": "上櫃",
@@ -25366,7 +25403,7 @@
    "employees": 255
   },
   {
-   "rank": 1811,
+   "rank": 1813,
    "code": "2722",
    "name": "夏都",
    "market": "上市",
@@ -25380,7 +25417,7 @@
    "employees": 349
   },
   {
-   "rank": 1812,
+   "rank": 1814,
    "code": "4535",
    "name": "至興",
    "market": "上櫃",
@@ -25394,7 +25431,7 @@
    "employees": 331
   },
   {
-   "rank": 1813,
+   "rank": 1815,
    "code": "1539",
    "name": "巨庭",
    "market": "上市",
@@ -25408,7 +25445,7 @@
    "employees": 140
   },
   {
-   "rank": 1814,
+   "rank": 1816,
    "code": "8933",
    "name": "愛地雅",
    "market": "上櫃",
@@ -25422,7 +25459,7 @@
    "employees": 204
   },
   {
-   "rank": 1815,
+   "rank": 1817,
    "code": "2736",
    "name": "富野",
    "market": "上櫃",
@@ -25436,7 +25473,7 @@
    "employees": 185
   },
   {
-   "rank": 1816,
+   "rank": 1818,
    "code": "5905",
    "name": "南仁湖",
    "market": "上櫃",
@@ -25450,7 +25487,7 @@
    "employees": 208
   },
   {
-   "rank": 1817,
+   "rank": 1819,
    "code": "1463",
    "name": "強盛新",
    "market": "上市",
@@ -25464,7 +25501,7 @@
    "employees": 116
   },
   {
-   "rank": 1818,
+   "rank": 1820,
    "code": "1213",
    "name": "大飲",
    "market": "上市",
@@ -25478,7 +25515,7 @@
    "employees": 87
   },
   {
-   "rank": 1819,
+   "rank": 1821,
    "code": "7642",
    "name": "昶瑞機電",
    "market": "上櫃",
@@ -25492,7 +25529,7 @@
    "employees": 92
   },
   {
-   "rank": 1820,
+   "rank": 1822,
    "code": "2740",
    "name": "天蔥",
    "market": "上櫃",
@@ -25506,7 +25543,7 @@
    "employees": 80
   },
   {
-   "rank": 1821,
+   "rank": 1823,
    "code": "6649",
    "name": "台生材",
    "market": "上櫃",
@@ -25520,7 +25557,7 @@
    "employees": 32
   },
   {
-   "rank": 1822,
+   "rank": 1824,
    "code": "5314",
    "name": "世紀*",
    "market": "上櫃",
@@ -25534,7 +25571,7 @@
    "employees": 44
   },
   {
-   "rank": 1823,
+   "rank": 1825,
    "code": "1235",
    "name": "興泰",
    "market": "上市",
@@ -25548,7 +25585,7 @@
    "employees": 13
   },
   {
-   "rank": 1824,
+   "rank": 1826,
    "code": "4950",
    "name": "金耘國際",
    "market": "上櫃",
