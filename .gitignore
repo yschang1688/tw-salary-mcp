@@ -3,3 +3,10 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *.egg-info/
+
+# web/ (Next.js)
+web/node_modules/
+web/.next/
+web/.vercel/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo

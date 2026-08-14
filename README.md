@@ -13,9 +13,10 @@ seven-year trends, industry box plots — a single self-contained page).
 
 | | |
 |---|---|
-| **MCP server** | `salary_mcp/` — four read-only tools + a schema resource, stdio transport |
+| **MCP server (stdio)** | `salary_mcp/` — four read-only tools + a schema resource, Python |
+| **MCP server (remote)** | `web/` — the same surface over Streamable HTTP, TypeScript, runs on the edge |
 | **Agent** | `agent/researcher.py` — Claude Agent SDK, multi-step planning over those tools |
-| **Tests** | 29 passing, including 16 that drive the server over the real protocol |
+| **Tests** | 47 passing — 29 Python, 18 driving the remote server over the real protocol |
 
 ## In brief
 
@@ -137,10 +138,50 @@ threshold.
 
 ```
 salary_mcp/dataset.py   loading, validation, queries — the only filesystem access
-salary_mcp/server.py    MCP tools and the schema resource
+salary_mcp/server.py    MCP tools and the schema resource (stdio)
 agent/researcher.py     Agent SDK options, permission gate, tool audit
 tests/                  16 protocol tests, 13 agent-guardrail tests
+web/src/lib/            the same query layer and tool surface, in TypeScript
+web/src/app/mcp/        JSON-RPC 2.0 endpoint — Streamable HTTP on the edge
+web/test/               18 protocol and boundary tests against a live server
 ```
+
+## Remote MCP server (`web/`)
+
+The stdio server has to be cloned and run before anyone can use it. `web/` is the
+same tool surface as a **remote MCP server**: add the URL to any MCP client and
+the four tools are there, no install.
+
+```bash
+cd web && npm install && npm run build
+npx next start -p 3466            # then: node --test test/protocol.test.mjs
+```
+
+It runs on the **Vercel Edge Runtime** (a V8 isolate, not Node), which drove two
+design choices worth naming:
+
+- **The JSON-RPC layer is hand-rolled.** `@modelcontextprotocol/sdk`'s
+  `StreamableHTTPServerTransport` is built on Node's `http` request and response
+  objects, which do not exist in an isolate. Streamable HTTP is JSON-RPC 2.0 over
+  POST, so the surface a stateless read-only server needs is small enough to write
+  directly against the Web-standard `Request`/`Response` — which is what makes it
+  deployable to the edge at all.
+- **It is stateless: no sessions, no SSE stream.** `GET` returns 405 with a
+  pointer to POST. The spec permits a server to decline the server-initiated
+  stream, and for pure reads there is nothing to push.
+
+The dataset is trimmed at build time to the fields the tools actually use
+(393 KB for seven years), so it is bundled rather than fetched — an edge function
+has a 1 MB code-size limit on the free tier.
+
+Errors are split deliberately: a bad *argument* comes back as a tool error
+(`isError`) so the model can read the message and retry, while a bad *request*
+comes back as a JSON-RPC error. Neither path returns a stack trace or a path.
+
+**The guard test is self-checking.** `GUARD: no generic query tool is exposed`
+asserts the property the whole design rests on. Planting a tool named `query` in
+`web/src/lib/tools.ts` turns three tests red; removing it returns 18/18 — verified,
+not assumed.
 
 ## Licence
 
