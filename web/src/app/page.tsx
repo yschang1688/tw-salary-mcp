@@ -33,7 +33,7 @@ export default function Home() {
           fontSize: ".875rem",
         }}
       >
-        <code>https://&lt;this-host&gt;/mcp</code>
+        <code>https://salary-mcp-beige.vercel.app/mcp</code>
       </pre>
 
       <h2 style={{ fontSize: "1rem", marginTop: "2rem" }}>Tools</h2>

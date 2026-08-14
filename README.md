@@ -14,7 +14,7 @@ seven-year trends, industry box plots — a single self-contained page).
 | | |
 |---|---|
 | **MCP server (stdio)** | `salary_mcp/` — four read-only tools + a schema resource, Python |
-| **MCP server (remote)** | `web/` — the same surface over Streamable HTTP, TypeScript, runs on the edge |
+| **MCP server (remote)** | **[salary-mcp-beige.vercel.app/mcp](https://salary-mcp-beige.vercel.app/mcp)** — the same surface over Streamable HTTP, live on the edge |
 | **Agent** | `agent/researcher.py` — Claude Agent SDK, multi-step planning over those tools |
 | **Tests** | 47 passing — 29 Python, 18 driving the remote server over the real protocol |
 
@@ -146,15 +146,33 @@ web/src/app/mcp/        JSON-RPC 2.0 endpoint — Streamable HTTP on the edge
 web/test/               18 protocol and boundary tests against a live server
 ```
 
-## Remote MCP server (`web/`)
+## Remote MCP server (`web/`) — live
+
+```
+https://salary-mcp-beige.vercel.app/mcp
+```
 
 The stdio server has to be cloned and run before anyone can use it. `web/` is the
-same tool surface as a **remote MCP server**: add the URL to any MCP client and
-the four tools are there, no install.
+same tool surface as a **remote MCP server**: add that URL to any MCP client and
+the four tools are there, no install, no key.
+
+```bash
+curl -s -X POST https://salary-mcp-beige.vercel.app/mcp \
+  -H 'content-type: application/json' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call",
+       "params":{"name":"lookup_company","arguments":{"query":"2330"}}}'
+```
+
 
 ```bash
 cd web && npm install && npm run build
 npx next start -p 3466            # then: node --test test/protocol.test.mjs
+```
+
+The suite also runs against the deployment — the same 18 tests, no local server:
+
+```bash
+MCP_URL=https://salary-mcp-beige.vercel.app/mcp node --test test/protocol.test.mjs
 ```
 
 It runs on the **Vercel Edge Runtime** (a V8 isolate, not Node), which drove two
@@ -182,6 +200,10 @@ comes back as a JSON-RPC error. Neither path returns a stack trace or a path.
 asserts the property the whole design rests on. Planting a tool named `query` in
 `web/src/lib/tools.ts` turns three tests red; removing it returns 18/18 — verified,
 not assumed.
+
+Deployment check (2026-08-14): 18/18 against production, and
+`x-vercel-id: hkg1::sin1` confirms it is served from the edge network rather than
+a single origin — the claim is measured, not inferred from the config.
 
 ## Licence
 

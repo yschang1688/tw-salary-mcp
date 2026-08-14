@@ -1,5 +1,11 @@
 # Deploying the remote MCP server
 
+> **✅ Deployed 2026-08-14 — <https://salary-mcp-beige.vercel.app/mcp>**
+> Verified in production: 18/18 protocol tests, `x-vercel-id: hkg1::sin1` (edge),
+> no Deployment Protection (an MCP client can reach it without a Vercel session).
+> The steps below are kept as the runbook for redeploying or for a fresh project.
+
+
 Everything below the "you do this" line is done — build is green, 18/18 tests
 pass, the guard test is self-checked. What is left needs a Vercel account, so it
 is John's to run.
