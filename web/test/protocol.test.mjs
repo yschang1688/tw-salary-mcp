@@ -30,11 +30,12 @@ test("initialize advertises the protocol version and server identity", async () 
   assert.equal(body.result.serverInfo.name, "salary-db");
 });
 
-test("tools/list exposes exactly the four named read-only tools", async () => {
+test("tools/list exposes exactly the seven named read-only tools", async () => {
   const { body } = await rpc("tools/list");
   assert.deepEqual(
     body.result.tools.map((t) => t.name).sort(),
-    ["company_trend", "industry_stats", "lookup_company", "top_by_median"],
+    ["analyze_jd", "company_trend", "industry_stats", "lookup_company",
+     "market_demand", "skill_gaps", "top_by_median"],
   );
 });
 

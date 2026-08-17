@@ -19,7 +19,7 @@ import { InvalidArgument, DATASET_YEAR } from "@/lib/dataset";
 export const runtime = "edge";
 
 const PROTOCOL_VERSION = "2025-06-18";
-const SERVER_INFO = { name: "salary-db", version: "1.0.0" };
+const SERVER_INFO = { name: "salary-db", version: "1.1.0" };
 
 // JSON-RPC 2.0 error codes (spec §5.1)
 const PARSE_ERROR = -32700;
@@ -76,7 +76,10 @@ function handle(msg: Record<string, unknown>) {
         instructions:
           `Salary disclosures for ${1826} TWSE/TPEx listed companies (2019-${DATASET_YEAR}), ` +
           "sourced from MOPS. Company-level aggregates only. Read salary://schema before " +
-          "interpreting figures — the median/mean ratio matters.",
+          "interpreting figures — the median/mean ratio matters. " +
+          "Also: JD fit tools (analyze_jd / skill_gaps / market_demand) over a 44-group skill " +
+          "dictionary with demand aggregates from a 1,086-posting data/AI corpus — corpus-scoped, " +
+          "not market-wide; the caller supplies their own skills, nothing is stored.",
       });
 
     case "tools/list":

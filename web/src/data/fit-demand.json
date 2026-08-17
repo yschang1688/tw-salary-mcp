@@ -1,0 +1,631 @@
+{
+  "_meta": {
+    "purpose": "Aggregate skill-demand statistics for the fit tools. Counts only — no job text, no company names, no titles.",
+    "corpus": "1086 data/AI-adjacent job postings from a Taiwanese job board, collected 2026-07/08",
+    "generatedAt": "2026-08-17",
+    "note": "Derived from a private corpus; the aggregation script and corpus are not part of this repo."
+  },
+  "corpusSize": 1086,
+  "groups": [
+    {
+      "id": "TypeScript / Next.js",
+      "kw": [
+        "typescript",
+        "next.js",
+        "nextjs",
+        "react"
+      ],
+      "demandCount": 65,
+      "demandPct": 6
+    },
+    {
+      "id": "PHP / Laravel",
+      "kw": [
+        "php",
+        "laravel"
+      ],
+      "demandCount": 11,
+      "demandPct": 1
+    },
+    {
+      "id": "Nest.js",
+      "kw": [
+        "nest.js",
+        "nestjs"
+      ],
+      "demandCount": 3,
+      "demandPct": 0.3
+    },
+    {
+      "id": "CSS / 渲染機制 / 狀態管理",
+      "kw": [
+        "css",
+        "html",
+        "渲染",
+        "狀態管理",
+        "zustand",
+        "tanstack"
+      ],
+      "demandCount": 52,
+      "demandPct": 4.8
+    },
+    {
+      "id": "RESTful API / OpenAPI",
+      "kw": [
+        "restful",
+        "api 設計",
+        "openapi",
+        "swagger"
+      ],
+      "demandCount": 81,
+      "demandPct": 7.5
+    },
+    {
+      "id": "SQL / 資料正規化",
+      "kw": [
+        "sql",
+        "資料正規化",
+        "postgres",
+        "mysql",
+        "ms sql",
+        "sql server",
+        "t-sql",
+        "stored procedure",
+        "預存程序",
+        "view",
+        "function"
+      ],
+      "demandCount": 370,
+      "demandPct": 34.1
+    },
+    {
+      "id": "資料倉儲 / 維度建模",
+      "kw": [
+        "資料倉儲",
+        "data warehouse",
+        "維度",
+        "dimension",
+        "事實表",
+        "fact",
+        "etl",
+        "elt",
+        "kimball",
+        "scd",
+        "teradata",
+        "dw",
+        "bi"
+      ],
+      "demandCount": 105,
+      "demandPct": 9.7
+    },
+    {
+      "id": "Redis / NoSQL",
+      "kw": [
+        "redis",
+        "nosql",
+        "vector database",
+        "向量資料庫",
+        "pgvector"
+      ],
+      "demandCount": 79,
+      "demandPct": 7.3
+    },
+    {
+      "id": "Message Queue",
+      "kw": [
+        "message queue",
+        "kafka",
+        "rabbitmq",
+        "訊息佇列",
+        "佇列"
+      ],
+      "demandCount": 36,
+      "demandPct": 3.3
+    },
+    {
+      "id": "Docker / 容器化",
+      "kw": [
+        "docker",
+        "container",
+        "容器",
+        "compose",
+        "映像",
+        "image",
+        "orbstack",
+        "容器化"
+      ],
+      "demandCount": 175,
+      "demandPct": 16.1
+    },
+    {
+      "id": "Linux / Git 協作",
+      "kw": [
+        "linux",
+        "git"
+      ],
+      "demandCount": 275,
+      "demandPct": 25.3
+    },
+    {
+      "id": "CI/CD",
+      "kw": [
+        "ci/cd",
+        "cicd",
+        "github actions",
+        "jenkins"
+      ],
+      "demandCount": 147,
+      "demandPct": 13.5
+    },
+    {
+      "id": "監控排錯 (ELK/Sentry)",
+      "kw": [
+        "elk",
+        "sentry",
+        "監控",
+        "排錯",
+        "mlops",
+        "mlflow"
+      ],
+      "demandCount": 171,
+      "demandPct": 15.7
+    },
+    {
+      "id": "AI 輔助開發",
+      "kw": [
+        "ai",
+        "claude",
+        "cursor",
+        "copilot",
+        "gemini",
+        "codex",
+        "llm",
+        "agentic",
+        "mcp",
+        "rag",
+        "comfyui",
+        "n8n",
+        "dify",
+        "open webui",
+        "langchain",
+        "llamaindex",
+        "vllm",
+        "推論",
+        "prompt",
+        "多 agent",
+        "multi-agent"
+      ],
+      "demandCount": 493,
+      "demandPct": 45.4
+    },
+    {
+      "id": "FP/OOP/SOLID/Patterns",
+      "kw": [
+        "solid",
+        "oop",
+        "design pattern",
+        "設計模式",
+        "fp"
+      ],
+      "demandCount": 77,
+      "demandPct": 7.1
+    },
+    {
+      "id": "TDD / BDD / 測試",
+      "kw": [
+        "tdd",
+        "bdd",
+        "unit test",
+        "測試"
+      ],
+      "demandCount": 316,
+      "demandPct": 29.1
+    },
+    {
+      "id": "JWT / OAuth / Web 安全",
+      "kw": [
+        "jwt",
+        "oauth",
+        "xss",
+        "csrf",
+        "cors",
+        "漏洞"
+      ],
+      "demandCount": 17,
+      "demandPct": 1.6
+    },
+    {
+      "id": "K8s / DevOps",
+      "kw": [
+        "kubernetes",
+        "k8s",
+        "devops"
+      ],
+      "demandCount": 140,
+      "demandPct": 12.9
+    },
+    {
+      "id": "分散式 / SQL 優化",
+      "kw": [
+        "分散式",
+        "高併發",
+        "sql 優化",
+        "cluster"
+      ],
+      "demandCount": 62,
+      "demandPct": 5.7
+    },
+    {
+      "id": "SEO / SSR",
+      "kw": [
+        "seo",
+        "ssr",
+        "sitemap",
+        "meta tag",
+        "canonical"
+      ],
+      "demandCount": 6,
+      "demandPct": 0.6
+    },
+    {
+      "id": "UML / ERD / 系統設計",
+      "kw": [
+        "uml",
+        "erd",
+        "系統設計",
+        "架構圖",
+        "需求探索",
+        "規劃分析"
+      ],
+      "demandCount": 97,
+      "demandPct": 8.9
+    },
+    {
+      "id": "第三方串接 (金流/登入)",
+      "kw": [
+        "第三方",
+        "金流",
+        "b2b api",
+        "串接",
+        "登入"
+      ],
+      "demandCount": 101,
+      "demandPct": 9.3
+    },
+    {
+      "id": "Mentor / 團隊",
+      "kw": [
+        "mentor",
+        "code review",
+        "協作",
+        "團隊"
+      ],
+      "demandCount": 776,
+      "demandPct": 71.5
+    },
+    {
+      "id": "Expo / App",
+      "kw": [
+        "expo",
+        "react native",
+        "app"
+      ],
+      "demandCount": 65,
+      "demandPct": 6
+    },
+    {
+      "id": "Golang",
+      "kw": [
+        "golang",
+        " go 語言",
+        "go "
+      ],
+      "demandCount": 34,
+      "demandPct": 3.1
+    },
+    {
+      "id": "Python / 資料工程",
+      "kw": [
+        "python",
+        "etl",
+        "spark",
+        "資料管線",
+        "data",
+        "數據",
+        "資料洞察",
+        "dbt",
+        "資料模型"
+      ],
+      "demandCount": 614,
+      "demandPct": 56.5
+    },
+    {
+      "id": "資料庫 / Schema 設計",
+      "kw": [
+        "資料庫",
+        "database",
+        "schema",
+        "正規化",
+        "migration",
+        "postgres",
+        "mysql",
+        "索引",
+        "資料模型",
+        "star schema",
+        "資料字典",
+        "綱要"
+      ],
+      "demandCount": 278,
+      "demandPct": 25.6
+    },
+    {
+      "id": "資料品質 / 異常分析",
+      "kw": [
+        "資料品質",
+        "data quality",
+        "異常",
+        "品質異常",
+        "根因",
+        "清理",
+        "cleansing",
+        "驗證"
+      ],
+      "demandCount": 352,
+      "demandPct": 32.4
+    },
+    {
+      "id": "訊息佇列 / 串流",
+      "kw": [
+        "kafka",
+        "flink",
+        "streaming",
+        "串流",
+        "即時",
+        "real-time",
+        "佇列"
+      ],
+      "demandCount": 150,
+      "demandPct": 13.8
+    },
+    {
+      "id": "網路 / TCP-IP",
+      "kw": [
+        "tcp",
+        "ip",
+        "ipv4",
+        "區域網路",
+        "lan",
+        "socket",
+        "網路設定",
+        "通訊協定",
+        "連線"
+      ],
+      "demandCount": 54,
+      "demandPct": 5
+    },
+    {
+      "id": "公有雲平台",
+      "kw": [
+        "雲端",
+        "cloud",
+        "aws",
+        "azure",
+        "gcp",
+        "ec2",
+        "s3",
+        "lambda",
+        "databricks",
+        "雲端服務",
+        "公有雲"
+      ],
+      "demandCount": 277,
+      "demandPct": 25.5
+    },
+    {
+      "id": "儀器 / 設備數據整合",
+      "kw": [
+        "儀器數據",
+        "設備數據",
+        "機台",
+        "感測",
+        "scada",
+        "mes",
+        "plc",
+        "量測數據",
+        "設備端"
+      ],
+      "demandCount": 74,
+      "demandPct": 6.8
+    },
+    {
+      "id": "C#/.NET",
+      "kw": [
+        "c#",
+        "c sharp",
+        ".net",
+        "dotnet",
+        "wpf",
+        "winform"
+      ],
+      "demandCount": 163,
+      "demandPct": 15
+    },
+    {
+      "id": "參數標準化 / 品質基準",
+      "kw": [
+        "標準化",
+        "sop",
+        "品質",
+        "qc",
+        "qa",
+        "製程參數",
+        "品保"
+      ],
+      "demandCount": 464,
+      "demandPct": 42.7
+    },
+    {
+      "id": "儀器分析",
+      "kw": [
+        "hplc",
+        "gpc",
+        "ftir",
+        "nmr",
+        "icp",
+        "sem",
+        "儀器",
+        "分析方法",
+        "檢驗"
+      ],
+      "demandCount": 33,
+      "demandPct": 3
+    },
+    {
+      "id": "配方 / 材料開發",
+      "kw": [
+        "配方",
+        "材料",
+        "高分子",
+        "接著劑",
+        "塗料",
+        "化工",
+        "化學"
+      ],
+      "demandCount": 175,
+      "demandPct": 16.1
+    },
+    {
+      "id": "DOE / 實驗最佳化",
+      "kw": [
+        "doe",
+        "實驗設計",
+        "最佳化",
+        "萃取",
+        "參數優化",
+        "a/b test",
+        "ab test",
+        "a/b 測試",
+        "假說",
+        "hypothesis"
+      ],
+      "demandCount": 65,
+      "demandPct": 6
+    },
+    {
+      "id": "量產 / Scale-up",
+      "kw": [
+        "量產",
+        "試產",
+        "放大",
+        "產線",
+        "導入",
+        "中試"
+      ],
+      "demandCount": 431,
+      "demandPct": 39.7
+    },
+    {
+      "id": "設備規格 / 採購",
+      "kw": [
+        "設備",
+        "採購",
+        "規格",
+        "供應商",
+        "vendor",
+        "維保"
+      ],
+      "demandCount": 559,
+      "demandPct": 51.5
+    },
+    {
+      "id": "商業決策 / 定價",
+      "kw": [
+        "定價",
+        "成本",
+        "商業",
+        "策略",
+        "競品",
+        "損益",
+        "商業價值",
+        "商業邏輯",
+        "商業效益",
+        "驅動決策"
+      ],
+      "demandCount": 510,
+      "demandPct": 47
+    },
+    {
+      "id": "專案管理 / PM·PO",
+      "kw": [
+        "專案管理",
+        "專案經理",
+        "product owner",
+        "product manag",
+        "project manag",
+        "產品經理",
+        "跨部門",
+        "stakeholder",
+        "roadmap",
+        "pm ",
+        "產品規劃",
+        "產品迭代",
+        "優先順序",
+        "優先級",
+        "prioriti"
+      ],
+      "demandCount": 643,
+      "demandPct": 59.2
+    },
+    {
+      "id": "教育訓練 / 知識治理",
+      "kw": [
+        "教育訓練",
+        "訓練講師",
+        "內訓",
+        "講師",
+        "知識管理",
+        "知識治理",
+        "傳承",
+        "onboard"
+      ],
+      "demandCount": 592,
+      "demandPct": 54.5
+    },
+    {
+      "id": "英文",
+      "kw": [
+        "英文",
+        "english",
+        "toeic",
+        "全英"
+      ],
+      "demandCount": 276,
+      "demandPct": 25.4
+    },
+    {
+      "id": "品牌 / 對外溝通",
+      "kw": [
+        "品牌",
+        "行銷",
+        "簡報",
+        "故事",
+        "溝通",
+        "發表"
+      ],
+      "demandCount": 672,
+      "demandPct": 61.9
+    }
+  ],
+  "yearsRequired": {
+    "1": 102,
+    "2": 175,
+    "3": 279,
+    "4": 16,
+    "5": 186,
+    "6": 10,
+    "7": 7,
+    "8": 32,
+    "10": 24,
+    "none": 255
+  }
+}
