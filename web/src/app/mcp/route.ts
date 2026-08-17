@@ -19,7 +19,7 @@ import { InvalidArgument, DATASET_YEAR } from "@/lib/dataset";
 export const runtime = "edge";
 
 const PROTOCOL_VERSION = "2025-06-18";
-const SERVER_INFO = { name: "salary-db", version: "1.0.0" };
+const SERVER_INFO = { name: "tw-salary-mcp", version: "1.1.0" };
 
 // JSON-RPC 2.0 error codes (spec §5.1)
 const PARSE_ERROR = -32700;
@@ -74,9 +74,15 @@ function handle(msg: Record<string, unknown>) {
         capabilities: { tools: {}, resources: {} },
         serverInfo: SERVER_INFO,
         instructions:
-          `Salary disclosures for ${1826} TWSE/TPEx listed companies (2019-${DATASET_YEAR}), ` +
-          "sourced from MOPS. Company-level aggregates only. Read salary://schema before " +
-          "interpreting figures — the median/mean ratio matters.",
+          "Grounding data for the Taiwanese job market, in two evidence tiers. " +
+          `Census tier: MOPS statutory salary disclosures, ${1826} TWSE/TPEx companies, 2019-${DATASET_YEAR} ` +
+          "(lookup_company / industry_stats / top_by_median / company_trend). " +
+          "Corpus tier: deterministic JD analysis over a versioned 32-group skill dictionary with " +
+          "demand aggregates from a dated 1,086-posting data/AI corpus " +
+          "(analyze_jd / skill_gaps / market_demand) — corpus-scoped, not market-wide. " +
+          "Every answer ends with a source-and-vintage stamp; quote it with the number. " +
+          "Callers supply their own skills; nothing is stored. Read salary://schema before " +
+          "interpreting pay figures — the median/mean ratio matters.",
       });
 
     case "tools/list":

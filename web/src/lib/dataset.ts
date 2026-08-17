@@ -15,7 +15,7 @@ export interface Company {
   code: string;
   name: string;
   market: string;
-  industry: string;
+  industry: string | null;  // MOPS 有少數未標產業的列——null 是資料事實，不是缺陷
   medianNonMgr: number;
   avgNonMgr: number;
   employees: number | null;
@@ -30,6 +30,10 @@ const YEARS = Object.keys(TREND).sort();
 export const DATASET_YEAR = current.year as number;
 export const UNIT_NOTE =
   "Figures are NT$10k (萬元) per year, non-managerial full-time employees.";
+
+/** Same contract as FIT_STAMP, for the census-grade family. */
+export const SALARY_STAMP =
+  `— Source: MOPS statutory disclosures (TWSE/TPEx listed companies), 2019-${DATASET_YEAR} vintage. Census-grade.`;
 
 const CODE_RE = /^\d{4,6}$/;
 
@@ -50,7 +54,7 @@ export function medianOverAvg(c: Company): number | null {
 export function formatCompany(c: Company): string {
   const parts = [
     `${c.name} (${c.code}, ${c.market})`,
-    `industry: ${c.industry}`,
+    `industry: ${c.industry ?? "(not classified)"}`,
     `median: ${c.medianNonMgr} 萬/yr`,
     `mean: ${c.avgNonMgr} 萬/yr`,
     `overall rank: ${c.rank}`,
@@ -73,7 +77,9 @@ export function findCompanies(rawQuery: unknown): Company[] {
 
 export function industryStats(rawIndustry: unknown) {
   const q = requireQuery(rawIndustry, "industry");
-  const hits = COMPANIES.filter((c) => c.industry.includes(q));
+  // industry can be null (unclassified in MOPS) — a null row must be skipped,
+  // not thrown on. This exact line took production down for every industry query in 1.0.0.
+  const hits = COMPANIES.filter((c) => c.industry?.includes(q));
   if (!hits.length) return null;
 
   const medians = hits.map((c) => c.medianNonMgr).sort((a, b) => a - b);
@@ -102,7 +108,7 @@ export function topByMedian(opts: {
 
   if (opts.industry != null && opts.industry !== "") {
     const q = requireQuery(opts.industry, "industry");
-    hits = hits.filter((c) => c.industry.includes(q));
+    hits = hits.filter((c) => c.industry?.includes(q));
   }
 
   if (opts.minMedian != null && opts.minMedian !== 0 && opts.minMedian !== "") {
