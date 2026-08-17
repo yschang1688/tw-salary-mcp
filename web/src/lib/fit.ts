@@ -26,6 +26,16 @@ export const CORPUS_NOTE = String(fitData._meta.corpus);
 const YEARS_HIST = fitData.yearsRequired as Record<string, number>;
 
 /**
+ * The vintage-and-provenance stamp. Contract: every fit-tool answer ends with
+ * this line, so a stale dataset degrades into a labelled snapshot instead of a
+ * silently wrong answer. Values come from the data file, not from code — the
+ * regeneration runbook (private side) bumps them and the stamp follows.
+ */
+export const FIT_STAMP =
+  `— Corpus: private snapshot ${fitData._meta.corpusWindow} (n=${fitData.corpusSize}), ` +
+  `dictionary v${fitData._meta.dictVersion}. Describes this corpus, not the whole market.`;
+
+/**
  * Keyword hit with a word-boundary rule for short ASCII tokens (≤4 chars):
  * plain substring matching would find ai⊂maintain, git⊂digital, app⊂Apache.
  * Longer tokens and CJK phrases match as substrings.

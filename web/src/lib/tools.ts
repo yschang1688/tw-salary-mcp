@@ -4,8 +4,14 @@
 // query tool. Descriptions carry the trigger condition ("use this when…"), not
 // just the capability, because that is what a model routes on.
 //
-// Two tool families share the server: salary disclosures (company-level, MOPS)
-// and JD fit analysis (skill-group dictionary + corpus demand aggregates).
+// Two tool families share the server, and they sit at different evidence tiers —
+// the descriptions and stamps keep them apart on purpose:
+//   salary family  = MOPS statutory disclosures. Census-grade: every listed
+//                    company, statutory filing, no self-selection.
+//   fit family     = a versioned skill dictionary + demand aggregates over a
+//                    private 1,086-posting corpus. Deterministic and dated,
+//                    but corpus-scoped, self-collected evidence.
+// Never let the fit family borrow the census family's authority.
 // The fit family holds no personal data: callers supply their own skills.
 
 import * as ds from "@/lib/dataset";
@@ -46,7 +52,7 @@ export const TOOLS: ToolDef[] = [
         const names = hits.slice(0, 10).map((c) => `${c.name}(${c.code})`).join(", ");
         return `${hits.length} companies match '${q}'. Narrow the query, or pick a code. First 10: ${names}`;
       }
-      return `${hits.map(ds.formatCompany).join("\n")}\n\n${ds.UNIT_NOTE}`;
+      return `${hits.map(ds.formatCompany).join("\n")}\n\n${ds.UNIT_NOTE}\n${ds.SALARY_STAMP}`;
     },
   },
 
@@ -79,6 +85,7 @@ export const TOOLS: ToolDef[] = [
         ...s.companies.slice(0, 5).map((c, i) => `  ${i + 1}. ${ds.formatCompany(c)}`),
         "",
         ds.UNIT_NOTE,
+        ds.SALARY_STAMP,
       ].join("\n");
     },
   },
@@ -111,6 +118,7 @@ export const TOOLS: ToolDef[] = [
         ...hits.map((c, i) => `  ${i + 1}. ${ds.formatCompany(c)}`),
         "",
         ds.UNIT_NOTE,
+        ds.SALARY_STAMP,
       ].join("\n");
     },
   },
@@ -147,17 +155,18 @@ export const TOOLS: ToolDef[] = [
           `  Not disclosed in: ${t.missingYears.join(", ")} (below the disclosure threshold, or not yet listed)`,
         );
       }
-      return [...lines, "", ds.UNIT_NOTE].join("\n");
+      return [...lines, "", ds.UNIT_NOTE, ds.SALARY_STAMP].join("\n");
     },
   },
 
   {
     name: "analyze_jd",
     description:
-      "Break a job description into the skill groups it asks for, with each group's demand share " +
-      "across a 1,086-posting corpus of data/AI roles at Taiwanese listed companies, plus the stated " +
-      "years-of-experience requirement. Use this when the user pastes a JD and wants to know what it " +
-      "is really asking for, or how common those asks are.",
+      "Deterministic JD breakdown: which skill groups a job description asks for, each with its " +
+      "demand share in a fixed 1,086-posting corpus of Taiwanese data/AI roles, plus the stated " +
+      "years-of-experience requirement. Same JD, same answer — versioned dictionary, word-boundary " +
+      "matching, no generation. Use this instead of freestyling a JD summary when the answer needs " +
+      "to be reproducible or auditable. Corpus-scoped evidence (self-collected), not census data.",
     inputSchema: {
       type: "object",
       properties: {
@@ -171,7 +180,8 @@ export const TOOLS: ToolDef[] = [
       if (!a.matched.length) {
         return (
           `None of the ${a.groupsChecked} skill groups match this text. ` +
-          "The dictionary covers data/AI/software roles — for other fields the result is expected to be empty."
+          "The dictionary covers data/AI/software roles — for other fields the result is expected to be empty.\n" +
+          fit.FIT_STAMP
         );
       }
       const rows = [...a.matched].sort((x, y) => y.demandPct - x.demandPct);
@@ -182,7 +192,7 @@ export const TOOLS: ToolDef[] = [
           ? `Experience required: ${a.yearsRequired.n}+ years ("${a.yearsRequired.matched}")`
           : "Experience required: not stated",
         "",
-        fit.CORPUS_NOTE,
+        fit.FIT_STAMP,
       ].join("\n");
     },
   },
@@ -190,10 +200,11 @@ export const TOOLS: ToolDef[] = [
   {
     name: "skill_gaps",
     description:
-      "Compare a job description against a list of skills the user actually has, and report which " +
-      "of the JD's asks are covered, which are gaps, and which supplied skills the dictionary could " +
-      "not place. Use this when the question is 'am I qualified for this?' or 'what should I learn " +
-      "for this role?'. The server stores nothing — skills exist only for this call.",
+      "Deterministic gap report: compare a job description against the skills the caller supplies, " +
+      "and say which of the JD's asks are covered, which are gaps, and which supplied skills the " +
+      "dictionary cannot place (reported, never silently dropped). Use this when 'am I qualified?' " +
+      "needs a reproducible answer rather than an impression. The server stores nothing — skills " +
+      "exist only for this call. Corpus-scoped evidence, not census data.",
     inputSchema: {
       type: "object",
       properties: {
@@ -236,6 +247,7 @@ export const TOOLS: ToolDef[] = [
           ? `Experience required: ${g.yearsRequired.n}+ years`
           : "Experience required: not stated",
       );
+      lines.push(fit.FIT_STAMP);
       return lines.join("\n");
     },
   },
@@ -243,10 +255,11 @@ export const TOOLS: ToolDef[] = [
   {
     name: "market_demand",
     description:
-      "Rank skill groups by how many postings in the corpus ask for them, optionally filtered by a " +
-      "name fragment; also reports the years-of-experience distribution. Use this for 'what is in " +
-      "demand?' or 'how common is X?' questions about the Taiwanese data/AI job market — and read " +
-      "the corpus caveat in the output before generalising.",
+      "Rank skill groups by how many corpus postings ask for them, optionally filtered by a name " +
+      "fragment; also reports the years-of-experience distribution. Use this for 'what is in " +
+      "demand?' or 'how common is X?' questions about Taiwanese data/AI roles. Unlike a model's " +
+      "recollection, these are counts over an actual dated corpus — but they describe that corpus " +
+      "only; the stamp in the output says which vintage you are quoting.",
     inputSchema: {
       type: "object",
       properties: {
@@ -257,7 +270,7 @@ export const TOOLS: ToolDef[] = [
     },
     run: (args) => {
       const rows = fit.marketDemand(args.query, args.limit);
-      if (!rows.length) return `No skill group matches '${String(args.query ?? "").trim()}'.`;
+      if (!rows.length) return `No skill group matches '${String(args.query ?? "").trim()}'.\n${fit.FIT_STAMP}`;
       const years = fit
         .yearsDistribution()
         .map((y) => `${y.requirement} ${y.pct}%`)
@@ -268,7 +281,7 @@ export const TOOLS: ToolDef[] = [
         "",
         `Years-of-experience requirements: ${years}`,
         "",
-        `⚠️ Corpus: ${fit.CORPUS_NOTE}. Shares describe that corpus, not the whole job market.`,
+        fit.FIT_STAMP,
       ].join("\n");
     },
   },

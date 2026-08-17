@@ -80,7 +80,7 @@ test("market_demand ranks by count and carries the corpus caveat", async () => {
   for (let i = 1; i < counts.length; i++) assert.ok(counts[i] <= counts[i - 1], "not sorted desc");
   // The stat must not travel without its scope.
   assert.match(text, /Corpus:/);
-  assert.match(text, /not the whole job market/);
+  assert.match(text, /not the whole market/);
 });
 
 test("market_demand: filter narrows, bad limit is refused", async () => {
@@ -127,4 +127,50 @@ test("GUARD: skills echo back in the same call only — the server is stateless"
   // A later, unrelated call must know nothing about the marker.
   const later = textOf(await callTool("analyze_jd", { jd: JD }));
   assert.doesNotMatch(later, new RegExp(marker));
+});
+
+// ── vintage & provenance contract ─────────────────────────────────────────
+test("CONTRACT: every tool's answer ends with a source-and-vintage stamp", async () => {
+  // The whole positioning rests on this: a stale dataset must degrade into a
+  // labelled snapshot, never a silently wrong answer. So the stamp is not a
+  // courtesy footer — it is asserted per tool, on real (non-error) answers,
+  // and on empty-result answers too (an empty result is still an answer).
+  const calls = [
+    ["lookup_company", { query: "2330" }],
+    ["industry_stats", { industry: "半導體" }],
+    ["top_by_median", { limit: 3 }],
+    ["company_trend", { code: "2330" }],
+    ["analyze_jd", { jd: JD }],
+    ["skill_gaps", { jd: JD, skills: ["python"] }],
+    ["market_demand", {}],
+    // empty-result branches
+    ["analyze_jd", { jd: "完全不相關的內文，關於烘焙與麵團發酵的溫度控制紀錄表格式說明。" }],
+    ["market_demand", { query: "zzz-no-such-group" }],
+  ];
+  for (const [name, args] of calls) {
+    const r = await callTool(name, args);
+    assert.notEqual(r.body.result.isError, true, `${name} unexpectedly errored`);
+    const text = textOf(r);
+    assert.match(text, /— (Source|Corpus):/, `${name} answered without a stamp`);
+  }
+});
+
+test("CONTRACT: the two families carry their own tier, never each other's", async () => {
+  // The census family must not carry corpus scoping, and the corpus family
+  // must not borrow census authority — mixing tiers is the failure mode this
+  // server exists to prevent.
+  const census = textOf(await callTool("lookup_company", { query: "2330" }));
+  assert.match(census, /Source: MOPS/);
+  assert.doesNotMatch(census, /Corpus:/);
+  const corpus = textOf(await callTool("market_demand", {}));
+  assert.match(corpus, /Corpus: private snapshot/);
+  assert.doesNotMatch(corpus, /MOPS|[Cc]ensus/);
+});
+
+test("CONTRACT: the stamp's vintage comes from the data file, not from code", async () => {
+  const { default: data } = await import("../src/data/fit-demand.json", { with: { type: "json" } });
+  const text = textOf(await callTool("market_demand", {}));
+  assert.match(text, new RegExp(data._meta.corpusWindow.replace(/[/]/g, "\\/")), "corpusWindow drifted");
+  assert.match(text, new RegExp(`n=${data.corpusSize}`), "corpus size drifted");
+  assert.match(text, new RegExp(`dictionary v${data._meta.dictVersion}`), "dictVersion drifted");
 });

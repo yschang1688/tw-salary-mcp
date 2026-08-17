@@ -27,7 +27,7 @@ const textOf = (r) => r.body.result.content[0].text;
 test("initialize advertises the protocol version and server identity", async () => {
   const { body } = await rpc("initialize", {});
   assert.equal(body.result.protocolVersion, "2025-06-18");
-  assert.equal(body.result.serverInfo.name, "salary-db");
+  assert.equal(body.result.serverInfo.name, "tw-salary-mcp");
 });
 
 test("tools/list exposes exactly the seven named read-only tools", async () => {
@@ -148,4 +148,13 @@ test("trend reports missing years explicitly rather than as zero", async () => {
   const text = textOf(await callTool("company_trend", { code: "2330" }));
   assert.match(text, /2019: 159\.6/);
   assert.doesNotMatch(text, /: 0 /);
+});
+
+test("REGRESSION: industry queries survive rows with null industry", async () => {
+  // 1.0.0 threw on every industry_stats call: 8 of 1,826 companies carry
+  // industry=null in the MOPS data, and the filter dereferenced it bare.
+  // Zero coverage let it reach production — this pins the whole path.
+  const { body } = await rpc("tools/call", { name: "industry_stats", arguments: { industry: "半導體" } });
+  assert.notEqual(body.result.isError, true, "industry_stats must not throw on the real dataset");
+  assert.match(body.result.content[0].text, /Industry '半導體/);
 });

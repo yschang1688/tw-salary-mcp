@@ -1,9 +1,14 @@
-# salary-mcp-agent
+# tw-salary-mcp
 
-[![tests](https://github.com/yschang1688/salary-mcp-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/yschang1688/salary-mcp-agent/actions/workflows/tests.yml)
+[![tests](https://github.com/yschang1688/tw-salary-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/yschang1688/tw-salary-mcp/actions/workflows/tests.yml)
 
-An MCP server that exposes a real dataset to a language model under explicit
-constraints, and a Claude Agent SDK agent that researches through it.
+Grounding data for the Taiwanese job market, served to language models under
+explicit constraints — plus a Claude Agent SDK agent that researches through it.
+
+A chatbot asked about Taiwanese pay will answer fluently from stale, non-local
+training data, and will happily average numbers that must not be averaged. This
+server exists to be plugged **into** that chatbot: named read-only tools over
+data it does not have, every answer ending with a source-and-vintage stamp.
 
 The dataset is Taiwan's MOPS non-managerial salary disclosures for listed
 companies, 2019–2025 — public company-level aggregates from the TWSE and TPEx
@@ -16,7 +21,7 @@ seven-year trends, industry box plots — a single self-contained page).
 | **MCP server (stdio)** | `salary_mcp/` — four read-only tools + a schema resource, Python |
 | **MCP server (remote)** | **[salary-mcp-beige.vercel.app/mcp](https://salary-mcp-beige.vercel.app/mcp)** — the same surface over Streamable HTTP, live on the edge |
 | **Agent** | `agent/researcher.py` — Claude Agent SDK, multi-step planning over those tools |
-| **Tests** | 47 passing — 29 Python, 18 driving the remote server over the real protocol |
+| **Tests** | 63 passing — 29 Python, 34 driving the remote server over the real protocol |
 
 ## In brief
 
@@ -46,15 +51,65 @@ Run the agent (needs `ANTHROPIC_API_KEY`):
 
 ## The tool surface
 
-| Tool | Answers |
-|---|---|
-| `lookup_company(query)` | One company by stock code or name substring |
-| `industry_stats(industry)` | Median, p25/p75, and range across a sector |
-| `top_by_median(industry, min_median, limit)` | Ranked list under filters |
-| `company_trend(code)` | One company's median for each year on record |
+Two families, at **different evidence tiers** — the stamps keep them apart:
+
+| Tier | Tool | Answers |
+|---|---|---|
+| census | `lookup_company(query)` | One company by stock code or name substring |
+| census | `industry_stats(industry)` | Median, p25/p75, and range across a sector |
+| census | `top_by_median(industry, min_median, limit)` | Ranked list under filters |
+| census | `company_trend(code)` | One company's median for each year on record |
+| corpus | `analyze_jd(jd)` | Which skill groups a job description asks for, with corpus demand share |
+| corpus | `skill_gaps(jd, skills)` | Covered vs gap groups for the caller's own skills (nothing stored) |
+| corpus | `market_demand(query, limit)` | Skill-group demand ranking + years-of-experience distribution |
+
+**census tier** = MOPS statutory disclosures: every listed company, statutory
+filing, no self-selection. **corpus tier** = deterministic analysis over a
+versioned 32-group skill dictionary, with demand aggregates from a private,
+dated corpus of 1,086 Taiwanese data/AI postings (counts only — no posting
+text, no company names, no attribution by design). The corpus tier never
+borrows the census tier's authority; a test asserts each family carries its
+own stamp and not the other's.
 
 Plus a `salary://schema` resource describing the fields, units, and the two
 reading rules that matter (below).
+
+## Side by side: the same question, bare vs grounded
+
+> **Q: 台積電和聯發科哪家分紅比較好？我五年經驗大概可以拿多少？**
+
+| Bare chatbot | Same chatbot + this server |
+|---|---|
+| A fluent paragraph quoting round numbers from training data of unknown age, comparing "bonus" figures that mix 分紅, 年終, and total pay — no way to tell which year, which population, or whether the numbers are real. | `lookup_company` returns each company's statutory median with `— Source: MOPS statutory disclosures (TWSE/TPEx), 2019-2025 vintage. Census-grade.` The model can compare like with like, say which year it is quoting — and decline the parts of the question the data cannot answer (individual bonus structure is not in a company-level census, and the server says so instead of improvising). |
+
+The difference is not eloquence. It is that one answer can be checked and the
+other cannot. Three properties do the work:
+
+1. **Determinism** — same JD, same answer. A versioned dictionary with
+   word-boundary matching (`ai` never matches *maintain*), not a generation.
+2. **Refusal** — populations that must not be mixed stay unmixed. Validation
+   errors come back as tool errors the model can read, not as improvised numbers.
+3. **Stamps** — every answer ends with its source and vintage. A stale dataset
+   degrades into a labelled snapshot, never a silently wrong answer. This is
+   asserted per tool, including empty-result answers.
+
+## What the matcher is, measured
+
+The corpus-tier matcher was scored against an 85-posting golden set,
+human-adjudicated hit-by-hit in the upstream (private) pipeline. Labels
+restricted to the 32 public groups:
+
+> **precision 0.54 · recall 0.89 · F1 0.67**
+
+Read the shape, not just the number: this is a deliberately **recall-first
+screening layer** — it would rather flag a group for you to reject than miss
+one. It is not a verdict layer, and no claim is made that it "beats" any model
+at reading a JD. What it has that a model does not: the same answer twice,
+a version number, and a measured error profile.
+
+**Snapshot semantics.** The corpus is a dated snapshot (window and size are in
+every stamp). There is no freshness promise and no SLA; regeneration is a
+documented runbook on the private side, and when it runs, the stamps change.
 
 ## Design decisions
 

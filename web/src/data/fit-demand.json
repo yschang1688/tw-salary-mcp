@@ -2,8 +2,10 @@
   "_meta": {
     "purpose": "Aggregate skill-demand statistics for the fit tools. Counts only — no job text, no company names, no titles.",
     "corpus": "1086 data/AI-adjacent job postings from a Taiwanese job board, collected 2026-07/08",
+    "corpusWindow": "2026-07/08",
+    "dictVersion": "2026-08-17",
     "generatedAt": "2026-08-17",
-    "note": "Derived from a private corpus; the aggregation script and corpus are not part of this repo."
+    "note": "Derived from a private corpus; the aggregation script and corpus are not part of the public repo."
   },
   "corpusSize": 1086,
   "groups": [
@@ -17,24 +19,6 @@
       ],
       "demandCount": 65,
       "demandPct": 6
-    },
-    {
-      "id": "PHP / Laravel",
-      "kw": [
-        "php",
-        "laravel"
-      ],
-      "demandCount": 11,
-      "demandPct": 1
-    },
-    {
-      "id": "Nest.js",
-      "kw": [
-        "nest.js",
-        "nestjs"
-      ],
-      "demandCount": 3,
-      "demandPct": 0.3
     },
     {
       "id": "CSS / 渲染機制 / 狀態管理",
@@ -422,22 +406,6 @@
       "demandPct": 25.5
     },
     {
-      "id": "儀器 / 設備數據整合",
-      "kw": [
-        "儀器數據",
-        "設備數據",
-        "機台",
-        "感測",
-        "scada",
-        "mes",
-        "plc",
-        "量測數據",
-        "設備端"
-      ],
-      "demandCount": 74,
-      "demandPct": 6.8
-    },
-    {
       "id": "C#/.NET",
       "kw": [
         "c#",
@@ -449,110 +417,6 @@
       ],
       "demandCount": 163,
       "demandPct": 15
-    },
-    {
-      "id": "參數標準化 / 品質基準",
-      "kw": [
-        "標準化",
-        "sop",
-        "品質",
-        "qc",
-        "qa",
-        "製程參數",
-        "品保"
-      ],
-      "demandCount": 464,
-      "demandPct": 42.7
-    },
-    {
-      "id": "儀器分析",
-      "kw": [
-        "hplc",
-        "gpc",
-        "ftir",
-        "nmr",
-        "icp",
-        "sem",
-        "儀器",
-        "分析方法",
-        "檢驗"
-      ],
-      "demandCount": 33,
-      "demandPct": 3
-    },
-    {
-      "id": "配方 / 材料開發",
-      "kw": [
-        "配方",
-        "材料",
-        "高分子",
-        "接著劑",
-        "塗料",
-        "化工",
-        "化學"
-      ],
-      "demandCount": 175,
-      "demandPct": 16.1
-    },
-    {
-      "id": "DOE / 實驗最佳化",
-      "kw": [
-        "doe",
-        "實驗設計",
-        "最佳化",
-        "萃取",
-        "參數優化",
-        "a/b test",
-        "ab test",
-        "a/b 測試",
-        "假說",
-        "hypothesis"
-      ],
-      "demandCount": 65,
-      "demandPct": 6
-    },
-    {
-      "id": "量產 / Scale-up",
-      "kw": [
-        "量產",
-        "試產",
-        "放大",
-        "產線",
-        "導入",
-        "中試"
-      ],
-      "demandCount": 431,
-      "demandPct": 39.7
-    },
-    {
-      "id": "設備規格 / 採購",
-      "kw": [
-        "設備",
-        "採購",
-        "規格",
-        "供應商",
-        "vendor",
-        "維保"
-      ],
-      "demandCount": 559,
-      "demandPct": 51.5
-    },
-    {
-      "id": "商業決策 / 定價",
-      "kw": [
-        "定價",
-        "成本",
-        "商業",
-        "策略",
-        "競品",
-        "損益",
-        "商業價值",
-        "商業邏輯",
-        "商業效益",
-        "驅動決策"
-      ],
-      "demandCount": 510,
-      "demandPct": 47
     },
     {
       "id": "專案管理 / PM·PO",
@@ -577,21 +441,6 @@
       "demandPct": 59.2
     },
     {
-      "id": "教育訓練 / 知識治理",
-      "kw": [
-        "教育訓練",
-        "訓練講師",
-        "內訓",
-        "講師",
-        "知識管理",
-        "知識治理",
-        "傳承",
-        "onboard"
-      ],
-      "demandCount": 592,
-      "demandPct": 54.5
-    },
-    {
       "id": "英文",
       "kw": [
         "英文",
@@ -601,19 +450,6 @@
       ],
       "demandCount": 276,
       "demandPct": 25.4
-    },
-    {
-      "id": "品牌 / 對外溝通",
-      "kw": [
-        "品牌",
-        "行銷",
-        "簡報",
-        "故事",
-        "溝通",
-        "發表"
-      ],
-      "demandCount": 672,
-      "demandPct": 61.9
     }
   ],
   "yearsRequired": {
