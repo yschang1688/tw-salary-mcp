@@ -13,7 +13,7 @@ is John's to run.
 ## You do this (about 5 minutes)
 
 ```bash
-cd ~/salary-mcp-agent/web
+cd ~/tw-salary-mcp/web
 npx vercel login          # browser opens; sign in with the GitHub yschang1688 account
 npx vercel link           # scope: personal, project name: salary-mcp
 npx vercel --prod
@@ -36,7 +36,7 @@ curl -s -X POST "$BASE/mcp" -H 'content-type: application/json' \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 
 # 3. Run the full suite against production
-cd ~/salary-mcp-agent/web && MCP_URL="$BASE/mcp" node --test test/protocol.test.mjs
+cd ~/tw-salary-mcp/web && MCP_URL="$BASE/mcp" node --test test/protocol.test.mjs
 ```
 
 ## Then connect a client
