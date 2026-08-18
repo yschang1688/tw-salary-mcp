@@ -1,9 +1,11 @@
 # Deploying the remote MCP server
 
-> **✅ Deployed 2026-08-14 — <https://salary-mcp-beige.vercel.app/mcp>**
-> Verified in production: 18/18 protocol tests, `x-vercel-id: hkg1::sin1` (edge),
-> no Deployment Protection (an MCP client can reach it without a Vercel session).
-> The steps below are kept as the runbook for redeploying or for a fresh project.
+> **✅ Deployed 2026-08-18 (v1.1.0, `tw-salary-mcp`) — <https://salary-mcp-beige.vercel.app/mcp>**
+> Verified in production: 34/34 tests (protocol + fit + stamp contract) against the
+> live URL; the 1.0.0 industry_stats null-industry bug is confirmed fixed in prod.
+> No Deployment Protection (an MCP client can reach it without a Vercel session).
+> First deployed 2026-08-14 as `salary-db` 1.0.0. CLI auth persists locally, so a
+> redeploy is just `npx vercel deploy --prod` from `web/` — no browser step.
 
 
 Everything below the "you do this" line is done — build is green, 18/18 tests
