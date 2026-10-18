@@ -20,8 +20,8 @@ seven-year trends, industry box plots — a single self-contained page).
 |---|---|
 | **MCP server (stdio)** | `salary_mcp/` — four read-only tools + a schema resource, Python |
 | **MCP server (remote)** | **[salary-mcp-beige.vercel.app/mcp](https://salary-mcp-beige.vercel.app/mcp)** — the same surface over Streamable HTTP, live on the edge |
-| **Agent** | `agent/researcher.py` — Claude Agent SDK, multi-step planning over those tools |
-| **Tests** | 63 passing — 29 Python, 34 driving the remote server over the real protocol |
+| **Agent** | `agent/researcher.py` — Claude Agent SDK, multi-step planning over those tools; `agent/local_loop.py` — the same loop with any tool-calling model (default: local Ollama, no key) |
+| **Tests** | 68 passing — 34 Python, 34 driving the remote server over the real protocol |
 
 ## In brief
 
@@ -34,7 +34,7 @@ language model, and how to prove the constraints hold.
 
 ```bash
 uv venv && uv pip install -e ".[dev]"
-.venv/bin/python -m pytest          # 29 passed
+.venv/bin/python -m pytest          # 34 passed
 ```
 
 Run the server on its own (it speaks MCP over stdio, so it waits for a client):
@@ -168,6 +168,7 @@ Being precise about what is and isn't covered:
 | Agent permission gate, allow-list, audit, ceilings | ✅ Unit-tested, both outcomes |
 | Agent allow-list matches the tools the server actually serves | ✅ Verified by launching the real server from the agent's own config |
 | **The agent loop itself — SDK driving a model through the tools** | ❌ **Not covered.** Requires API credentials, which are not present in the environment this was built in. The code follows the documented SDK API and constructs against the real SDK types, but no live multi-turn run has been executed. |
+| **A multi-turn tool-calling loop with a local model** (`agent/local_loop.py`) | ✅ One live run with `qwen3.5:9b` via Ollama (2026-10-18): 4 turns, 3 allow-listed calls in the planned order, every number in the answer traceable to a tool output — and two causal claims no tool supports. Log and hand review: [`agent/runs/2026-10-18-qwen3.5-9b.md`](agent/runs/2026-10-18-qwen3.5-9b.md). Loop behaviour (tool result reaches the model, forbidden tool refused and recoverable, turn cap holds) is pinned by 5 tests with a scripted model against the real server; the refusal test was checked by removing the allow-list check, which turns it red. |
 
 **The posture assertions are self-validated.** Guard tests that only ever pass
 are the ones you should trust least, so the check was verified against a
